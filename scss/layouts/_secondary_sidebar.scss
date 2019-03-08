@@ -1,0 +1,57 @@
+@import './header';
+
+$secondary_sidebar_width: 24px;
+$secondary_sidebar_margin-left: 64px;
+$secondary_sidebar_width-hover: 220px;
+
+.secondarySidebar {
+    position: fixed;
+    top: $header_height;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 100vh;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    width: $secondary_sidebar_width;
+    left: $secondary_sidebar_margin-left;
+    background-color: #fcfcfc;
+    color: #deebff;
+    fill: $warning;
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1) 0s, color 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+    box-shadow: 0px 0px 3px #333;
+    z-index: 999;
+    &:hover {
+        width: $secondary_sidebar_width-hover;
+        & + .secondarySidebarButton {
+            left: $secondary_sidebar_margin-left + $secondary_sidebar_width-hover - 15px;
+        }
+    }
+}
+
+.secondarySidebarButton {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: #333;
+    background-color: #fcfcfc;
+    position: fixed;
+    top: calc(#{$header_height} + 20px);
+    left: $secondary_sidebar_margin-left +  $secondary_sidebar_width - 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #333;
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1) 0s, color 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+    z-index: 999;
+    &:hover {
+        background-color: $primary;
+        svg path {
+            fill: #fff;
+        }
+    }
+}

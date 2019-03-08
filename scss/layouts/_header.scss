@@ -1,0 +1,13 @@
+$header_height: 7vh;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: $header_height;
+    transition: all 0.2s ease-in-out;
+    background-color: #fcfcfc;
+    box-shadow: 1px 1px 20px #333;
+    z-index: 1000;
+}
