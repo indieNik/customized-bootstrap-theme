@@ -1,4 +1,5 @@
 $header_height: 7vh;
+$min-header_height: 50px;
 
 .header {
     position: fixed;
@@ -6,6 +7,7 @@ $header_height: 7vh;
     left: 0;
     width: 100vw;
     height: $header_height;
+    min-height: $min-header_height;
     transition: all 0.2s ease-in-out;
     background-color: #fcfcfc;
     box-shadow: 1px 1px 20px #333;
