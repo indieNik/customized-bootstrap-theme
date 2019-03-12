@@ -1,4 +1,5 @@
 .card {
+    box-shadow: 0 0 1rem .1rem rgba(#000, .075);
     .card-header {
         border-radius: $card-border-radius $card-border-radius 0 0;
         border-bottom: 2px solid theme-color-level(light, 0.1);
@@ -6,6 +7,7 @@
     .card-body {
         .section-title {
             color: $silver;
+            font-size: 13px;
         }
     }
 }
