@@ -1,13 +1,3 @@
 @import './header';
 @import './sidebar';
 @import './secondary_sidebar';
-
-$container_margin-left: $sidebar_width + $secondary_sidebar_width;
-$container_width: calc(100vw - #{$container_margin-left});
-$container_padding: 50px;
-
-.container {
-    position: relative;
-    top: $header_height;
-    padding: $container_padding;
-}
