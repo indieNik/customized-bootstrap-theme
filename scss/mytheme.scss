@@ -2,7 +2,7 @@
 *
 *       ==================================  The SMACSS Way    ==================================
 *       
-*                                   * BASE
+*                                   * BASE *
 *       Base rules are the defaults.
 *       They are almost exclusively single element selectors but it could include attribute selectors,
 *       pseudo-class selectors, child selectors or sibling selectors.
@@ -14,26 +14,79 @@
 *       input[type=text] { border: 1px solid #999; }
 *       a { color: #039; }
 *       a:hover { color: #03C; }
-*                                   * LAYOUTS
+*       
+*                                   * LAYOUTS *
 *       Layout rules divide the page into sections. Layouts hold one or more modules together.
 *       
-*                                   * MODULES
+*       
+*                                   * MODULES *
 *       Modules are the reusable, modular parts of our design.
 *       They are the callouts, the sidebar sections, the product lists and so on.
 *       
-*                                   * STATE
+*       
+*                                   * STATE *
 *       State rules are ways to describe how our modules or layouts will look when in a particular state.
 *       Is it hidden or expanded? Is it active or inactive? They are about describing how a module or layout looks
 *       on screens that are smaller or bigger. They are also about describing how a module might look in
 *       different views like the home page or the inside page.
 *       
-*                                   * THEME
+*       
+*                                   * THEME *
 *       Finally, Theme rules are similar to state rules in that they describe how modules or layouts might look.
 *       Most sites don’t require a layer of theming but it is good to be aware of it.
 *
 ***************************************************************************************************************/
 
+// Custom Variabes 
 @import 'custom-variables';
-@import '../node_modules/bootstrap/scss/bootstrap';
+
+// // Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// // Optional
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+// @import "../node_modules/bootstrap/scss/type";
+// @import "../node_modules/bootstrap/scss/images";
+// @import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
+// @import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/input-group";
+@import "../node_modules/bootstrap/scss/transitions";
+// @import "../node_modules/bootstrap/scss/nav";
+// @import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/utilities";
+// @import "../node_modules/bootstrap/scss/buttons";
+// @import "../node_modules/bootstrap/scss/button-group";
+// @import "../node_modules/bootstrap/scss/dropdown";
+// @import "../node_modules/bootstrap/scss/input-group";
+// @import "../node_modules/bootstrap/scss/custom-forms";
+// @import "../node_modules/bootstrap/scss/breadcrumb";
+// @import "../node_modules/bootstrap/scss/pagination";
+// @import "../node_modules/bootstrap/scss/badge";
+// @import "../node_modules/bootstrap/scss/jumbotron";
+// @import "../node_modules/bootstrap/scss/alert";
+// @import "../node_modules/bootstrap/scss/progress";
+// @import "../node_modules/bootstrap/scss/media";
+// @import "../node_modules/bootstrap/scss/list-group";
+// @import "../node_modules/bootstrap/scss/close";
+// @import "../node_modules/bootstrap/scss/toasts";
+// @import "../node_modules/bootstrap/scss/modal";
+// @import "../node_modules/bootstrap/scss/tooltip";
+// @import "../node_modules/bootstrap/scss/popover";
+// @import "../node_modules/bootstrap/scss/carousel";
+// @import "../node_modules/bootstrap/scss/spinners";
+// @import "../node_modules/bootstrap/scss/print";
+
+
+
+// Import entire bootstrap ( Comment above Required and Optional Sections - Not required )
+// @import "../node_modules/bootstrap/scss/bootstrap";
+
+// Custom Theming
 @import './base';
 @import './layouts/container';
