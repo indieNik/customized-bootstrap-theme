@@ -6,8 +6,9 @@
 
 // Overriding Typography
 $font-family-base: 'Lato', sans-serif;
+$font-weight: 300;
 $font-weight-light: 100;
-$font-weight-base: $font-weight-light;
+$font-weight-base: $font-weight;
 
 // Enabling shadows and gradients
 $enable-shadows: true;
