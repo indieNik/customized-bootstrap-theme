@@ -84,9 +84,12 @@
 
 
 
-// Import entire bootstrap ( Comment above Required and Optional Sections - Not required )
+/* Import entire bootstrap ( Comment above Required and Optional Sections - Not required ) */
 // @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Custom Theming
+// SMACSS - Scalable and Modular Architecture for CSS
 @import './base';
 @import './layouts/container';
+
+// Component Overrides
+@import './cards'

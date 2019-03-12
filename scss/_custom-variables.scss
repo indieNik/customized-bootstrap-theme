@@ -5,12 +5,12 @@
 // Some example variables that you can uncomment:
 
 // Enabling shadows and gradients
-//$enable-shadows: true;
+$enable-shadows: true;
 //$enable-gradients: true;
 
 // Changing the body background and text
-// $body-bg: #d3e9eb;
-// $body-color: #151417;
+$body-bg: #f8f8f8;
+$body-color: #102e5d;
 
 // Changing the border radius of buttons
 //$border-radius: 15px;
@@ -23,10 +23,17 @@
 //$warning: #ef8143;
 //$danger: #ff293a;
 //$light: #dfe6ee;
-//$dark: #0f1319;
+$dark: #102e5d;
 
 
 // Adding (!) an additional theme color (ex. classes btn-cool, bg-cool)
 // $theme-colors: (
 //  "cool": #4d3fa3
 // );
+
+// Card Variables Override
+$card-cap-bg: #fff;
+$card-bg: #fff;
+$card-border-radius: 0.5rem;
+$card-border-width: 0;
+$card-border-color: #fff;
