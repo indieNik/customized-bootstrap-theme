@@ -19,13 +19,30 @@
                 flex-direction: column;
                 margin-left: 10px;
                 .title {
-                    font-size: 0.8rem;
-                    font-weight: 400;
+                    font-size: $sub-title-font-size;
+                    @extend .font-weight-normal;
                 }
                 .caption {
-                    font-size: 0.6rem;
+                    font-size: $sub-caption-font-size;
                     color: $silver;
                 }
+            }
+        }
+    }
+    .stats__competencies {
+        width: 100%;
+        .competencies__title {
+            @extend .mb-2, .font-weight-normal;
+            font-size: $sub-title-font-size;
+        }
+        .competencies__details {
+            .tag--blue {
+                @extend .badge, .badge-primary, .p-2, .mr-2, .mb-2;
+                background: #DFEDFD;
+                color: #3383C4;
+                border-radius: 0.5rem;
+                font-size: 12px;
+                font-weight: 400;
             }
         }
     }
