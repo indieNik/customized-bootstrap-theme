@@ -1,0 +1,40 @@
+.profile-stats {
+	.profile {
+		display: flex;
+		align-items: center;
+		
+		&__details {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-left: 20px;
+			line-height: 2;
+		}
+		&__user-name {
+			font-size: 1.3rem;
+    	font-weight: 400;
+			color: $dark;
+		}
+		&__user-position {
+			font-size: 0.9rem;
+    	font-weight: 400;
+			color: rgba($dark, .75);
+		}
+		&__manager, &__department, &__business-unit {
+			font-size: 14px;
+			.title {
+				display: inline-block;
+				color: $silver;
+			}
+			.value {
+				display: inline-block;
+				color: #8aaad5;
+			}
+		}
+
+		&__img {
+			width: 120px;
+		}
+	}
+}
