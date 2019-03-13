@@ -1,4 +1,5 @@
 .profile-stats {
+	margin-bottom: 1.5rem;
 	.profile {
 		display: flex;
 		align-items: center;
@@ -27,7 +28,7 @@
 				display: inline-block;
 				color: $silver;
 			}
-			.value {
+			.caption {
 				display: inline-block;
 				color: #8aaad5;
 			}
