@@ -1,0 +1,10 @@
+.avatar {
+    @extend .img-fluid, .img-thumbnail;
+    font-size: 7.5rem;
+    &--icon {
+        font-size: 2rem;
+    }
+    &--rounded {
+        @extend .rounded-circle;
+    }
+}

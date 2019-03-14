@@ -8,26 +8,6 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        .stats__card {
-            display: flex;
-            align-items: center;
-            .fa {
-                font-size: 2rem;
-            }
-            .stats__card__details {
-                display: flex;
-                flex-direction: column;
-                margin-left: 10px;
-                .title {
-                    font-size: $sub-title-font-size;
-                    @extend .font-weight-normal;
-                }
-                .caption {
-                    font-size: $sub-caption-font-size;
-                    color: $silver;
-                }
-            }
-        }
     }
     .stats__competencies {
         width: 100%;
@@ -46,4 +26,8 @@
             }
         }
     }
+}
+
+.stats__card {
+    @extend .mini-card;
 }

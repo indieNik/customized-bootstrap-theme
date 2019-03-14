@@ -25,7 +25,7 @@
   <div class="container container-fluid mt-5">
     <div class="row profile-stats">
       <div class="col-md-7 profile">
-        <img class="profile__img img-fluid img-thumbnail rounded-circle" src="https://source.unsplash.com/120x120/?face" alt="Profile Picture">
+        <img class="avatar rounded-circle" src="https://source.unsplash.com/120x120/?face" alt="Profile Picture">
         <div class="profile__details">
           <div class="profile__user-name">Joslin Rodgers</div>
           <div class="profile__user-position">Senior Implementation Engineer</div>
@@ -46,22 +46,22 @@
       <div class="col-md-5 stats">
         <div class="stats__details">
           <div class="stats__card">
-            <div class="fa fa-calendar"></div>
-            <div class="stats__card__details">
+            <div class="avatar--icon fa fa-calendar"></div>
+            <div class="details">
               <div class="title">Dec 14, 2018</div>
               <div class="caption">Date of Joining</div>
             </div>
           </div>
           <div class="stats__card">
-            <div class="fa fa-hourglass-end"></div>
-            <div class="stats__card__details">
+            <div class="avatar--icon fa fa-hourglass-end"></div>
+            <div class="details">
               <div class="title">3y 4m</div>
               <div class="caption">Tenure</div>
             </div>
           </div>
           <div class="stats__card">
-            <div class="fa fa-users"></div>
-            <div class="stats__card__details">
+            <div class="avatar--icon fa fa-users"></div>
+            <div class="details">
               <div class="title">12</div>
               <div class="caption">Direct Reports</div>
             </div>
@@ -98,29 +98,19 @@
           <div class="card-header">
                 Certification
           </div>
-          <div class="card-body">
-            <div class="card__container d-flex">
-              <div class="card new_certificates shadow-none" style="font-variant: all-small-caps;display:inline-block;margin-right:10px">
-                <div class="card_view rounded" style="width:225px;height:100px;border:1px solid #ecebeb;display: flex;justify-content: space-evenly;align-items: center;background: #ecebeb5e;color: #f35737;font-size: 18px;">
-                  <div class="card_data" style="text-align: center; display: flex; justify-content: space-evenly; align-items: center; flex-direction: column;">
-                    <i class="fa fa-plus-circle" style="font-size: 2rem;"></i>
-                    <elabel>Add</elabel>
-                  </div>
-                </div>
+          <div class="card-body d-flex">
+            <div class="certification-card rounded-lg" style="width:225px;height:100px;border:1px solid #ecebeb;display: flex;justify-content: space-evenly;align-items: center;background: #ecebeb5e;color: #f35737;font-size: 18px;">
+              <div class="card_data" style="text-align: center; display: flex; justify-content: space-evenly; align-items: center; flex-direction: column;">
+                <i class="fa fa-plus-circle" style="font-size: 2rem;"></i>
+                <elabel>Add</elabel>
               </div>
-              <div class="list_cards">
-                <div>
-                  <div class="card list_certificates shadow-none rounded" style="font-variant: all-small-caps;margin-right:10px; width:225px;height:100px;border:1px solid #ecebeb;background: #ecebeb5e;">
-                    <div class="col-md-2" style="display: flex;justify-content: space-evenly;align-items: center; font-size: 18px;height: 100%;">
-                      <i class="fa fa-award"></i>
-                    </div>
-                    <div class="col-md-10" style="display: flex;justify-content: space-evenly; height: 100%; flex-direction: column;font-size: 13px">
-                      <div class="certification_title">Accounting Qualification Excelence</div>
-                      <div class="certificate_place">Accounting Institute</div>
-                      <div class="certificate_expiry">Expired on: Dec 14, 2018</div>
-                    </div>
-                  </div>
-                </div>
+            </div>
+            <div class="certification-card rounded-lg">
+              <div class="avatar--icon fa fa-award"></div>
+              <div class="details">
+                <div class="title">Accounting Qualification Excelence</div>
+                <div class="caption">Accounting Institute</div>
+                <div class="certificate_expiry">Expired on: Dec 14, 2018</div>
               </div>
             </div>
           </div>
