@@ -1,0 +1,29 @@
+.certification-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.certification-card {
+    @extend .mini-card;
+    width: 230px;
+    @extend .mr-4, .mb-4;
+    border: 1px solid #ecebeb;
+    background: #ecebeb5e;
+    padding: 1rem;
+    .details {
+        margin-left: 20px;
+        .title {
+            font-size: 0.8rem;
+        }
+    }
+    border-radius: 0.5rem;
+}
+
+.add-certification-card {
+    justify-content: center;
+    flex-direction: column;
+    color: #f35737;
+    font-size: 1.3rem;
+    justify-content: space-evenly;
+    font-variant: all-small-caps;
+}
