@@ -88,17 +88,16 @@
 // @import "../node_modules/bootstrap/scss/bootstrap";
 
 // SMACSS - Scalable and Modular Architecture for CSS
-@import './base';
+@import './base/base';
 @import './layouts/container';
 
 // Component Overrides
-@import './components/card';
+@import './components/bootstrap_components/card';
 @import './components/mini-card';
 @import './components/profile';
 @import './components/stats_card';
-@import './components/mini-card';
 @import './components/avatar';
 @import './components/certifications';
-@import './components/modal';
-@import './components/buttons';
-@import './components/forms';
+@import './components/bootstrap_components/modal';
+@import './components/bootstrap_components/buttons';
+@import './components/bootstrap_components/forms';
