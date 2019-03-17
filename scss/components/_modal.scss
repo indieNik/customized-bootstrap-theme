@@ -1,9 +1,18 @@
 .modal {
+    ::-webkit-input-placeholder, .form-check-label {
+        color: $silver;
+        font-size: 0.75rem;
+    }
     .modal-header {
+        padding: 0.5rem 1rem;
         .modal-title {
             color: $dark;
             font-size: 1.3rem;
             font-variant: all-small-caps;
         }
+    }
+    .modal-footer {
+        border-top: 0;
+        padding-top: 0;
     }
 }

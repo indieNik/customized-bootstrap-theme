@@ -114,10 +114,39 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    ...
+                    <div class="form-group">
+                      <input class="form-control form-control-sm mb-3" type="text" placeholder="Certification Name">
+                      <input class="form-control form-control-sm mb-3" type="text" placeholder="Certification Authority">
+                    </div>
+                    <div class="form-check form-control-sm">
+                      <input type="checkbox" class="form-check-input" id="certificationExpCheck">
+                      <label class="form-check-label" for="certificationExpCheck">This Certificate does not expire</label>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="input-group">
+                          <input type="text" class="form-control form-control-sm" placeholder="Start" aria-label="Start" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <span class="input-group-text">
+                              <i class="fa fa-calendar"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="input-group">
+                          <input type="text" class="form-control form-control-sm" placeholder="End" aria-label="End" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <span class="input-group-text">
+                              <i class="fa fa-calendar"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-link">
+                    <button type="button" class="btn btn-link text-info">
                       <i class="fa fa-paperclip"></i> Attachment
                     </button>
                     <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
