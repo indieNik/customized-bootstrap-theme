@@ -1,0 +1,19 @@
+
+/* Inputs */
+
+input.form-control {
+    box-shadow: none;
+    border: 1px solid $silver;
+}
+.input-group {
+    .input-group-append {
+        cursor: pointer;
+        .input-group-text {
+            border: 1px solid $silver;
+            background-color: transparent;
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+}

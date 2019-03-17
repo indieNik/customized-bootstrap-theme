@@ -16,3 +16,10 @@
         padding-top: 0;
     }
 }
+
+// media queries
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 540px;
+    }
+}
