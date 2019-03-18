@@ -2,3 +2,7 @@
     width: 120px;
     font-variant: all-small-caps;
 }
+
+.btn-more {
+    @extend .btn, .btn-link, .text-uppercase, .text-primary, .ml-n1, .mt-n3, .mb-2;
+}
