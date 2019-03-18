@@ -23,6 +23,8 @@
         max-width: 540px;
     }
     .modal-sm {
-        max-width: 300px;
+        max-width: 250px;
+        max-height: 420px;
+        overflow: scroll;
     }
 }

@@ -4,7 +4,8 @@
     &--icon {
         font-size: 2rem;
     }
-    &--rounded {
-        @extend .rounded-circle;
-    }
+}
+
+.avatar-mini {
+    width: 30px;
 }
