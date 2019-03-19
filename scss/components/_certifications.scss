@@ -8,7 +8,6 @@
     width: 275px;
     @extend .mr-4, .mb-4;
     border: 1px solid #ecebeb;
-    background: #ecebeb5e;
     padding: 1rem;
     .details {
         margin-left: 20px;
@@ -22,6 +21,7 @@
 .add-certification-card {
     justify-content: center;
     flex-direction: column;
+    background: #ecebeb5e;
     color: $primary;
     font-size: 1.3rem;
     justify-content: space-evenly;
