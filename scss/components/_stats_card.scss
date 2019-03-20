@@ -18,8 +18,8 @@
         .competencies__details {
             .tag--blue {
                 @extend .badge, .badge-primary, .p-2, .mr-2, .mb-2;
-                background: #DFEDFD;
-                color: #3383C4;
+                background: lighten($blue, 50%);
+                color: $blue;
                 border-radius: 0.5rem;
                 font-size: 12px;
                 font-weight: 400;
@@ -30,4 +30,5 @@
 
 .stats__card {
     @extend .mini-card;
+    padding: 0;
 }

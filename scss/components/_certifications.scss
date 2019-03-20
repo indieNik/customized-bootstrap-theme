@@ -8,14 +8,12 @@
     width: 275px;
     @extend .mr-4, .mb-4;
     border: 1px solid #ecebeb;
-    padding: 1rem;
     .details {
         margin-left: 20px;
         .title {
             font-size: 0.8rem;
         }
     }
-    border-radius: 0.5rem;
 }
 
 .add-certification-card {

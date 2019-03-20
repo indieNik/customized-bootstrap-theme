@@ -1,0 +1,26 @@
+.feedback-filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-top: 0;
+}
+.feedback-filter-card {
+    @extend .mini-card, .cursor-pointer;
+    color: $blue;
+    .details {
+        .title {
+            color: $info;
+            font-size: 0.8rem;
+            font-weight: 100 !important;
+        }
+    }
+    &.active {
+        background-color: lighten($blue, 50%);
+        color: $blue;
+        .title {
+            color: $blue;
+            font-weight: 400 !important;
+        }
+    }
+}
