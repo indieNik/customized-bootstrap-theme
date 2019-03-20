@@ -24,3 +24,19 @@
         }
     }
 }
+
+.feedback-table-container {
+    border: 1px solid rgba(#000, .075);
+    border-radius: 0.25rem;
+    .table th {
+        width: 11rem;
+    }
+    .mini-card {
+        padding: 1rem 1rem 1rem 0;
+        .btn-more-mini {
+            padding-left: 0;
+            text-align: left;
+            margin-top: -10px !important;
+        }
+    }
+}

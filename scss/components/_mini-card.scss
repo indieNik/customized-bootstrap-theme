@@ -19,5 +19,14 @@
             font-size: 0.6rem;
             color: $info;
         }
+        .comment {
+            color: $dark;
+            font-size: $sub-caption-font-size;
+        }
+        .hashtag {
+            @extend .mt-2, .mb-2;
+            color: $info;
+            font-size: $sub-caption-font-size;
+        }
     }
 }

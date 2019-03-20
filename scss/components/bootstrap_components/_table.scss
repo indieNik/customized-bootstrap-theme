@@ -1,0 +1,11 @@
+.table {
+    thead {
+        border-bottom: 1px solid rgba(#000, .075);
+        tr th {
+            padding: 1rem 1.3rem;
+            color: $silver;
+            font-size: .85rem;
+            font-weight: 300;
+        }
+    }
+}
