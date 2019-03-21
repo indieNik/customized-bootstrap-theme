@@ -30,6 +30,12 @@
             cursor: pointer;
         }
     }
+    .cert-download-btn {
+        @extend .btn, .btn-sm, .btn-primary;
+        position: absolute;
+        bottom: 0.5rem;
+        right: 1rem;
+    }
 }
 
 .add-certification-card {
