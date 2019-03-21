@@ -7,6 +7,7 @@
 }
 .feedback-filter-card {
     @extend .mini-card, .cursor-pointer;
+    padding: 1rem;
     color: $blue;
     .details {
         .title {
