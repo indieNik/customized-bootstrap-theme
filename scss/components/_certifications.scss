@@ -17,6 +17,28 @@
     }
 }
 
+.certification-modal-card {
+    @extend .mini-card;
+    position: relative;
+    padding: 0.5rem;
+    line-height: 1.3rem;
+    .hover-actions {
+        display: none;
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+        word-spacing: 0.5rem;
+        .fa {
+            cursor: pointer;
+        }
+    }
+    &:hover {
+        .hover-actions {
+            display: block;
+        }
+    }
+}
+
 .add-certification-card {
     justify-content: center;
     flex-direction: column;
