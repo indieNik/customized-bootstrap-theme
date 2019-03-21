@@ -15,11 +15,25 @@
             font-size: 0.8rem;
         }
     }
+    .hover-actions {
+        display: none;
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        word-spacing: 0.5rem;
+        .fa {
+            cursor: pointer;
+        }
+    }
+    &:hover {
+        .hover-actions {
+            display: block;
+        }
+    }
 }
 
 .certification-modal-card {
     @extend .mini-card;
-    position: relative;
     padding: 0.5rem;
     line-height: 1.3rem;
     .hover-actions {
