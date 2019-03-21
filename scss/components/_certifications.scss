@@ -20,7 +20,7 @@
 .certification-modal-card {
     @extend .mini-card;
     padding: 0.5rem;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
     .hover-actions {
         position: absolute;
         top: 0.5rem;
@@ -35,6 +35,13 @@
         position: absolute;
         bottom: 0.5rem;
         right: 1rem;
+    }
+    & + .certificate-image {
+        padding: 0 1rem;
+        box-shadow: 0 0 1rem .1rem rgba(#000, .075);
+        img {
+            width: 100%;
+        }
     }
 }
 
