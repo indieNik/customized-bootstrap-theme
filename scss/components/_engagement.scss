@@ -1,0 +1,20 @@
+.engagement-card {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    .description {
+        margin-top: 0.6rem;
+        margin-left: 3rem;
+        font-size: $sub-caption-font-size;
+        color: $silver;
+    }
+    .mini-card {
+        .comment {
+            font-size: $sub-caption-font-size;
+            @extend .font-weight-normal;
+        }
+        .title {
+            color: $dark;
+            font-size: $sub-caption-font-size;
+        }
+    }
+}
