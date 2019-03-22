@@ -2,10 +2,36 @@
     border: none;
     box-shadow: 0 0 1rem .1rem rgba(#000, .075);
     .card-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         //border-radius: $card-border-radius $card-border-radius 0 0;
         //border-bottom: 2px solid theme-color-level(light, 0.1);
         font-weight: 400;
-        text-transform: uppercase
+        text-transform: uppercase;
+        .overlay-actions-btn {
+            @extend .cursor-pointer;
+            .overlay-actions-container {
+                position: absolute;
+                top: 2rem;
+                right: -2rem;
+                .card-body {
+                    padding-bottom: 0;
+                }
+                .overlay-actions {
+                    .overlay-actions-link {
+                        display: block;
+                        font-size: 80%;
+                        font-weight: 100;
+                        color: $primary;
+                        margin-bottom: 1rem;
+                        &:last {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
     }
     .card-body {
         .section-title {
