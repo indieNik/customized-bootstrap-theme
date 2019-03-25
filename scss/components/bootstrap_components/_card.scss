@@ -12,9 +12,11 @@
         .overlay-actions-btn {
             @extend .cursor-pointer;
             .overlay-actions-container {
+                display: none;
                 position: absolute;
                 top: 2rem;
                 right: -2rem;
+                cursor: default;
                 .card-body {
                     padding-bottom: 0;
                 }
