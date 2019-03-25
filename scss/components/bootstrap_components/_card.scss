@@ -12,7 +12,7 @@
         .overlay-actions-btn {
             @extend .cursor-pointer;
             .overlay-actions-container {
-                display: none;
+                // display: none;
                 position: absolute;
                 top: 2rem;
                 right: -2rem;

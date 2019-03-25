@@ -54,3 +54,15 @@
     justify-content: space-evenly;
     font-variant: all-small-caps;
 }
+
+.add-certification-modal {
+    .attachment-form {
+        .attachment-label {
+            @extend .btn, .btn-link, .text-info, .cursor-pointer;
+        }
+        input[type=file] {
+            position: absolute;
+            opacity: 0.1;
+        }
+    }
+}
