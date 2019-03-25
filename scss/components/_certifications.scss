@@ -56,13 +56,33 @@
 }
 
 .add-certification-modal {
-    .attachment-form {
-        .attachment-label {
-            @extend .btn, .btn-link, .text-info, .cursor-pointer;
-        }
-        input[type=file] {
-            position: absolute;
-            opacity: 0.1;
+    .add-certification-modal-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .attachments {
+            display: none;
+            margin: 0 0 1rem 0;
+            width: 100%;
+            .custom-file {
+                .custom-file-input {
+                    cursor: pointer;
+                }
+                .custom-file-label {
+                    height: 2rem;
+                    font-size: 0.75rem;
+                    border: 1px solid #b1bdce;
+                    box-shadow: none;
+                    color: $silver;
+                    &::after {
+                        color: $silver;
+                        background-color: #fff;
+                    }
+                }
+            }
+            &.show {
+                display: block;
+            }
         }
     }
 }
