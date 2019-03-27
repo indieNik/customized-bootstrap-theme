@@ -1,0 +1,222 @@
+/* <==================Donut Styles=================== > */
+/* <==============1) Donut Container============= > */
+.donut_container_title,
+.donut_container_title_courses {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  position: absolute !important;
+  top: 48% !important;
+  left: 19% !important;
+  text-align: center;
+  color: #a6b4c7;
+  font-family: sans-serif;
+}
+.donut_container_title_courses {
+  top: 42% !important;
+}
+.donut_container_title > div:nth-child(1) {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+.donut_container_title > div:nth-child(2) {
+  font-size: 18px;
+  font-weight: 500 !important;
+  padding-top: 10%;
+  color: #0f2e5c !important;
+}
+/* <==============1) Donut Legend============= > */
+#donutChart > svg > g:nth-child(4) {
+  transform: translate(155px, -22px);
+}
+#donutChart > svg > g:nth-child(4) > g.c3-legend-item > text {
+  transform: translate(14px, 2px);
+  font-size: 0.75rem;
+  fill: $silver;
+}
+#donutChart > svg {
+  width: 400px;
+  height: 400px;
+}
+#donutChart > svg > g:nth-child(4) > g:nth-child(1) {
+  transform: translate(153px, -20px);
+  font-size: 16px;
+}
+#donutChart > svg > g:nth-child(4) > g:nth-child(2) {
+  transform: translate(153px, 0px);
+  font-size: 16px;
+}
+#donutChart > svg > g:nth-child(4) > g:nth-child(3) {
+  transform: translate(153px, 20px);
+  font-size: 16px;
+}
+#donutChart > svg > g:nth-child(4) > g:nth-child(4) {
+  transform: translate(153px, 40px);
+  font-size: 16px;
+}
+#donutChart > svg > g:nth-child(4) > g:nth-child(5) {
+  transform: translate(153px, 60px);
+  font-size: 16px;
+}
+#donutChart > svg > g:nth-child(4) > g:nth-child(6) {
+  transform: translate(153px, 80px);
+  font-size: 16px;
+  padding-left: 10%;
+}
+.c3-legend-item-tile {
+  shape-rendering: auto;
+  stroke-linecap: round;
+  stroke-dasharray: 0.2 80;
+  stroke-width: 9;
+  transform: translate(7px, 3px);
+}
+.donut_item_count_list {
+  position: absolute !important;
+  display: inline-block;
+  top: 22.4% !important;
+  left: 64% !important;
+  text-align: right;
+}
+.donut_item_count_list > div {
+  padding: 10.4px 0px;
+  color: #7199cd;
+  font-weight: 400;
+  font-size: 12px;
+}
+/* <==================Bar Chart Styles=================== > */
+/* <==============1) Bar Chart Container============= > */
+.barchart_container {
+  margin-top: 10%;
+}
+#barChart > svg > g:nth-child(2) > g.c3-axis.c3-axis-x > g > text > tspan {
+  font-size: 15px;
+}
+.c3-bars path {
+  shape-rendering: auto;
+}
+.barchart_container > hr {
+  margin-right: 10%;
+  margin-left: 16.5%;
+  /* margin-top: -%; */
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #d3dbe4;
+  padding: 0;
+}
+/* <==============2) Bar Chart x-axes Lables============= > */
+#container {
+  /* width: 70%; */
+  height: 2%;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+  margin-left: 14%;
+  margin-right: 7%;
+}
+.box1,
+.box2,
+.box3,
+.box4 {
+  width: 20%;
+  height: 125px;
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  color: #7199cd;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 90%;
+}
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+/* <==============3) Bar Chart Legend============= > */
+/* basic positioning */
+.legend {
+  list-style: none;
+  margin-right: 8%;
+}
+.legend li {
+  float: right;
+  margin-right: 10px;
+  color: #a6b4c7;
+  font-size: 18px;
+  padding: 0 2%;
+}
+.legend span {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin: 2px;
+  margin-top: 4%;
+  margin-right: 15px;
+}
+/* your colors */
+.legend .superawesome {
+  background-color: #8fddc1;
+  border-radius: 50%;
+}
+.legend .awesome {
+  background-color: #3376b7;
+  border-radius: 50%;
+}
+.legend .kindaawesome {
+  background-color: #8bc01a;
+  border-radius: 50%;
+}
+/* <==============3) Tool Tip============= > */
+.bar-tooltip {
+  border: 1px solid #d9d9d9;
+  border-radius: 3%;
+}
+.c3-tooltip tr {
+  border: none !important;
+}
+.bar-tooltip > tr > td {
+  padding: 4%;
+  width: 300px;
+  border: none;
+}
+.bar-tooltip > tr:nth-child(1) > td {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  color: #0f2e5c;
+  padding-top: 3%;
+  padding-bottom: 0%;
+}
+.bar-tooltip > tr:nth-child(2) > td {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  color: #0f2e5c;
+}
+.bar-tooltip > tr:nth-child(3) > td {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #a6b4c7;
+}
+.bar-tooltip > tr:nth-child(1) > td > hr {
+  display: block;
+  margin-top: 6%;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #d3dbe4;
+  padding: 0;
+}
+.c3-target.c3-defocused {
+  opacity: 0.4 !important;
+}
+.c3-bar._expanded_ {
+  fill-opacity: 1 !important;
+}
