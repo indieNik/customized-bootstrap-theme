@@ -29,11 +29,21 @@
 .feedback-table-container {
     border: 1px solid rgba(#000, .075);
     border-radius: 0.25rem;
-    .table th {
-        width: 11rem;
+    .table {
+        th {
+            width: 11rem;
+        }
+        td {
+            padding: 0.85rem 0.75rem;
+            &:first-child {
+                .mini-card {
+                    padding-left: 0.6rem;
+                }
+            }
+        }
     }
     .mini-card {
-        padding: 1rem 1rem 1rem 0;
+        // padding: 0;
         .btn-more-mini {
             padding-left: 0;
             text-align: left;
