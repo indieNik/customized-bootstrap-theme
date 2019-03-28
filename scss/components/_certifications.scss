@@ -6,13 +6,16 @@
 .certification-card {
     @extend .mini-card;
     padding: 1rem;
-    width: 240px;
-    @extend .mr-4, .mb-4;
+    width: 210px;
+    @extend .mr-3, .mb-3;
     border: 1px solid #ecebeb;
     .details {
         margin-left: 20px;
         .title {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
+        }
+        .caption {
+            font-size: 0.65rem;
         }
     }
 }
