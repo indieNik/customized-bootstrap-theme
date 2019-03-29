@@ -1,0 +1,8 @@
+.tag--blue {
+    @extend .badge, .badge-primary, .p-2, .mr-2, .mb-2;
+    background: lighten($blue, 50%);
+    color: $blue;
+    border-radius: 0.5rem;
+    font-size: 12px;
+    font-weight: 400;
+}
