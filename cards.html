@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/mytheme.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -24,7 +25,7 @@
   </div>
   <div class="container container-fluid container-actual mt-5">
     <div class="row profile-stats">
-      <div class="col-md-7 profile">
+      <div class="col-md-7 profile"> <!-- Profile Section-->
         <img class="avatar rounded-circle" src="https://source.unsplash.com/120x120/?face" alt="Profile Picture">
         <div class="profile__details">
           <div class="profile__user-name">Joslin Rodgers</div>
@@ -49,7 +50,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-5 stats">
+      <div class="col-md-5 stats"> <!-- Stats Section-->
         <div class="stats__details">
           <div class="stats__card">
             <div class="avatar--icon fa fa-calendar"></div>
@@ -93,7 +94,7 @@
     </div>
     <div class="row">
       <!--Card-->
-      <div class="col-lg-12 mt-lg-0 mt-4">
+      <div class="col-lg-12 mt-lg-0 mt-4"> <!-- Performance Section-->
         <div class="card mb-2 mt-2">
           <div class="card-header">
             Performance
@@ -110,7 +111,211 @@
           </button>
         </div>
       </div>
-      <div class="col-lg-12 mt-lg-0 mt-4">
+      <div class="col-lg-12 mt-lg-0 mt-4"> <!-- Development Card-->
+        <div class="card mb-2 mt-2">
+          <div class="card-header">
+            Development
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="multiraterGraphs">
+                    <div></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <table class="dataTable table" id="multiraterTable" role="grid">
+                    <thead>
+                      <tr role="row">
+                        <th aria-label="Cycles1">Cycles1</th>
+                        <th aria-label="Employee Rating1">Employee Rating1</th>
+                        <th aria-label="Reviewer Rating1">Reviewer Rating1</th>
+                        <th aria-label="Others1">Others1</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="odd" role="row">
+                        <td class="sorting_1">
+                          <div class="name">90 Days Review</div>
+                          <div class="date">1-1-2017 - 1-6-2018</div>
+                        </td>
+                        <td>NA - Not Adequate</td>
+                        <td>NA - Not Adequate</td>
+                        <td>-</td>
+                      </tr>
+                      <tr class="even" role="row">
+                        <td class="sorting_1">
+                          <div class="name">June</div>
+                          <div class="date">1-1-2017 - 1-6-2018</div>
+                        </td>
+                        <td>NA - Not Adequate</td>
+                        <td>NA - Not Adequate</td>
+                        <td>4.67</td>
+                      </tr>
+                      <tr class="odd" role="row">
+                        <td class="sorting_1">
+                          <div class="name">90 Days Review</div>
+                          <div class="date">1-1-2017 - 1-6-2018</div>
+                        </td>
+                        <td>NA - Not Adequate</td>
+                        <td>NA - Not Adequate</td>
+                        <td>-</td>
+                      </tr>
+                      <tr class="even" role="row">
+                        <td class="sorting_1">
+                          <div class="name">H1 Goals and Competencies</div>
+                          <div class="date">1-1-2017 - 1-6-2018</div>
+                        </td>
+                        <td>NA - Not Adequate</td>
+                        <td>NA - Not Adequate</td>
+                        <td>-</td>
+                      </tr>
+                      <tr class="odd" role="row">
+                        <td class="sorting_1">
+                          <div class="name">90 Days Review</div>
+                          <div class="date">1-1-2017 - 1-6-2018</div>
+                        </td>
+                        <td>NA - Not Adequate</td>
+                        <td>NA - Not Adequate</td>
+                        <td>3.3</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="courseGraphs">
+                    <div>
+                      <div class="caption text-nowrap">
+                        Courses
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="courseDatatables">
+                    <div>
+                      <div class="row">
+                        <div class="ml-12 stats__card" style="width: 25%;margin-left:12px">
+                          <div class="stats__card__details">
+                            <div class="caption text-nowrap">All</div>
+                          </div>
+                        </div>
+                        <div class="stats__details" style="width: 25%">
+                          <div class="stats__card">
+                            <div class="stats__card__details">
+                              <div class="caption text-nowrap">Pending</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="stats__details">
+                          <div class="stats__card">
+                            <div class="stats__card__details">
+                              <div class="caption text-nowrap">Completed</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="no-border-top table-responsive">
+                          <div class="dataTables_wrapper no-footer" id="courseTable_wrapper">
+                            <div class="dataTables_scroll">
+                              <div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;">
+                                <div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 100px; padding-right: 0px;">
+                                  <table class="dataTable datatable-basic no-footer table-borderless table" role="grid" style="margin-left: 0px; width: 100px;">
+                                    <thead>
+                                      <tr role="row">
+                                        <th aria-label="Courses1" class="sorting_asc" colspan="1" rowspan="1" style="width: 30%;">Courses1</th>
+                                        <th aria-label="Status1" class="sorting_disabled" colspan="1" rowspan="1" style="width: 30%;">Status1</th>
+                                        <th aria-label="Mandatory1" class="sorting_disabled" colspan="1" rowspan="1" style="width: 30%;">Mandatory1</th>
+                                        <th aria-label="Points1" class="sorting_disabled" colspan="1" rowspan="1" style="width: 30%;">Points1</th>
+                                      </tr>
+                                    </thead>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="dataTables_scrollBody" style="position: relative; overflow: auto; max-height: 300px; width: 100%;">
+                                <table class="dataTable datatable-basic no-footer table table-borderless" id="courseTable" role="grid" style="width: 100%; display: table;">
+                                  <thead>
+                                    <tr role="row" style="height: 0px;">
+                                      <th aria-label="Courses1" class="sorting_asc" colspan="1" rowspan="1" style="width: 30%; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;">
+                                        <div class="dataTables_sizing" style="height:0;overflow:hidden;">Courses1</div>
+                                      </th>
+                                      <th aria-label="Status1" class="sorting_disabled" colspan="1" rowspan="1" style="width: 30%; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;">
+                                        <div class="dataTables_sizing" style="height:0;overflow:hidden;">Status1</div>
+                                      </th>
+                                      <th aria-label="Mandatory1" class="sorting_disabled" colspan="1" rowspan="1" style="width: 30%; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;">
+                                        <div class="dataTables_sizing" style="height:0;overflow:hidden;">Mandatory1</div>
+                                      </th>
+                                      <th aria-label="Points1" class="sorting_disabled" colspan="1" rowspan="1" style="width: 30%; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;">
+                                        <div class="dataTables_sizing" style="height:0;overflow:hidden;">Points1</div>
+                                      </th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr class="odd" role="row">
+                                      <td class="sorting_1">
+                                        <div class="name">Rapdid</div>
+                                        <div class="date">End: 21-6-2010</div>
+                                      </td>
+                                      <td>pending</td>
+                                      <td>Yes</td>
+                                      <td>100</td>
+                                    </tr>
+                                    <tr class="even" role="row">
+                                      <td class="sorting_1">
+                                        <div class="name">Rapdid</div>
+                                        <div class="date">End: 21-6-2010</div>
+                                      </td>
+                                      <td>pending</td>
+                                      <td>Yes</td>
+                                      <td>100</td>
+                                    </tr>
+                                    <tr class="odd" role="row">
+                                      <td class="sorting_1">
+                                        <div class="name">Rapdid</div>
+                                        <div class="date">End: 21-6-2010</div>
+                                      </td>
+                                      <td>pending</td>
+                                      <td>Yes</td>
+                                      <td>100</td>
+                                    </tr>
+                                    <tr class="even" role="row">
+                                      <td class="sorting_1">
+                                        <div class="name">Rapdid</div>
+                                        <div class="date">End: 21-6-2010</div>
+                                      </td>
+                                      <td>pending</td>
+                                      <td>Yes</td>
+                                      <td>100</td>
+                                    </tr>
+                                    <tr class="odd" role="row">
+                                      <td class="sorting_1">
+                                        <div class="name">Rapdid</div>
+                                        <div class="date">End: 21-6-2010</div>
+                                      </td>
+                                      <td>pending</td>
+                                      <td>Yes</td>
+                                      <td>100</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+      </div>
+      <div class="col-lg-12 mt-lg-0 mt-4"> <!-- Feedback Section-->
         <div class="card mb-2 mt-2">
           <div class="card-header">
             Feedback
@@ -233,7 +438,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-12 mt-lg-0 mt-4">
+      <div class="col-lg-12 mt-lg-0 mt-4"> <!-- Engagement Section-->
         <div class="card mb-2 mt-2">
           <div class="card-header">
                 Engagement
@@ -302,7 +507,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-12 mt-lg-0 mt-4">
+      <div class="col-lg-12 mt-lg-0 mt-4"> <!-- Cetification Section-->
         <div class="card mb-2 mt-2">
           <div class="card-header">
                 Certification
@@ -652,6 +857,28 @@
     (function () {
       bsCustomFileInput.init()
     })()
+  </script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready( function () {
+      $('#multiraterTable').DataTable({
+        "searching": false,
+        "ordering":  false,
+        "scrollY": '250px',
+        // "scrollCollapse": true,
+        "paging":  false,
+        "info":  false
+      });
+      $('#courseTable').DataTable({
+        "searching": false,
+        "ordering":  false,
+        "scrollY": '250px',
+        "scrollCollapse": true,
+        "paging":  false,
+        "info":  false
+      });
+    } );
   </script>
 
 </body>
