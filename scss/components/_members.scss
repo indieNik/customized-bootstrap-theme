@@ -1,0 +1,48 @@
+.members-sidebar {
+    width: 130%;
+    font-size: 80%;
+    .members-header {
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+    .members-search {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $silver;
+        border-radius: 0;
+        padding: 0;
+        &::placeholder {
+            color: $silver;
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+    }
+    .members-container {
+        max-height: 40vh;
+        overflow-y: scroll;
+        .mini-card {
+            cursor: pointer;
+            padding: 0.5rem;
+            .details {
+                .title {
+                    color: lighten($blue, 25%);
+                    font-size: 0.75rem;
+                    font-weight: 100 !important;
+                }
+                .caption {
+                    font-size: 0.65rem;
+                }
+            }
+            &.active {
+                background-color: #fff;
+                border-left: 3px solid $primary;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+                .title {
+                    color: $dark;
+                }
+            }
+        }
+    }
+}
