@@ -3,5 +3,14 @@
 }
 
 .container {
-    width: 995px !important;
+    width: 1220px!important;
+    max-width: 1440px !important;
+}
+
+@media only screen and (min-width: 1441px) {
+    .container {
+        width: 50vw !important;
+        max-width: 1270px !important;
+        margin-top: 9.5rem !important;
+    }
 }
