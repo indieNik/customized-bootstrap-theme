@@ -1,0 +1,16 @@
+.role-assessment-card {
+	.section-title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.table-container {
+		.table {
+			td:first-child {
+				.mini-card {
+					padding-left: 0rem;
+				}
+			}
+		}
+	}
+}

@@ -8,5 +8,8 @@
 }
 
 .btn-more-mini {
-    @extend .btn-more, .btn-sm;
+    @extend .btn-more, .btn-sm ;
+    font-size: 0.7rem;
+    font-variant: normal;
+    text-transform: capitalize !important;
 }

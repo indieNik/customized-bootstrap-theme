@@ -9,3 +9,16 @@
         }
     }
 }
+
+.table-container {
+    border: 1px solid rgba(#000, .075);
+    border-radius: 0.25rem;
+    .table {
+        th {
+            width: 11rem;
+        }
+        td {
+            padding: 0.85rem 0.75rem;
+        }
+    }
+}
