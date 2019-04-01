@@ -2,6 +2,7 @@
     border: none;
     box-shadow: 0 0 1rem .1rem rgba(#000, .075);
     .card-header {
+
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -9,6 +10,7 @@
         //border-bottom: 2px solid theme-color-level(light, 0.1);
         font-weight: 400;
         text-transform: uppercase;
+        
         .overlay-actions-btn {
             @extend .cursor-pointer;
             .overlay-actions-container {
@@ -35,6 +37,7 @@
             }
         }
     }
+
     .card-body {
         .section-title {
             color: $silver;

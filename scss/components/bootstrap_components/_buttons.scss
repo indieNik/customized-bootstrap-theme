@@ -5,6 +5,9 @@
 
 .btn-more {
     @extend .btn, .btn-lg, .btn-link, .d-inline, .text-uppercase, .text-primary, .text-decoration-none, .mt-n3, .mb-2, .cursor-pointer;
+    &:active, &:focus {
+        box-shadow: none !important;
+    }
 }
 
 .btn-more-mini {
@@ -12,4 +15,16 @@
     font-size: 0.7rem;
     font-variant: normal;
     text-transform: capitalize !important;
+}
+
+.btn-toggle {
+    @extend .btn-more;
+    margin: 0 !important;
+    font-size: 1.2rem;
+    padding: 0;
+    text-align: right;
+    .fa {
+        font-size: 0.8rem;
+        margin-left: 0.3rem;
+    }
 }
