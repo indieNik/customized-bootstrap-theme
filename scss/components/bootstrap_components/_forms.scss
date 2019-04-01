@@ -17,3 +17,15 @@ input.form-control {
         }
     }
 }
+
+.form-check-label {
+    cursor: pointer;
+}
+
+.form-check-input {
+    font-size: 0.5rem;
+}
+
+.custom-select {
+    color: $dark;
+}
