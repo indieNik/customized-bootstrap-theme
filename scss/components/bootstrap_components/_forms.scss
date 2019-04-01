@@ -18,6 +18,7 @@ input.form-control {
     }
 }
 
+/* Checkboxes & Radio Buttons and their labels */
 .form-check-label {
     cursor: pointer;
 }
@@ -26,6 +27,12 @@ input.form-control {
     font-size: 0.5rem;
 }
 
+/* Checkboxes & Radio Buttons and their labels */
 .custom-select {
     color: $dark;
+}
+
+/* Textarea */
+textarea.form-control {
+    font-size: 0.875rem !important;
 }
