@@ -25,6 +25,9 @@ input.form-control {
 
 .form-check-input {
     font-size: 0.5rem;
+    &:checked + .form-check-label {
+        color: $blue;
+    }
 }
 
 /* Checkboxes & Radio Buttons and their labels */
