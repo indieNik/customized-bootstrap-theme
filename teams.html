@@ -192,7 +192,7 @@
               <div class="stats__card">
                 <div class="avatar--icon fa fa-users"></div>
                 <div class="details">
-                  <div class="title cursor-pointer">
+                  <div class="title cursor-pointer" onclick="toggleDropdown()">
                     <span class="float-left">12</span>
                     <span class="float-right">
                       <i class="fa fa-angle-down text-silver"></i>
@@ -1121,6 +1121,10 @@
         $(this).toggleClass('hidden');
         $(this).css("display", "none !important");
       });
+    }
+    function toggleDropdown() {
+      var el = $(event.target);
+      $(el[0].nextSibling.nextSibling.nextSibling.nextSibling).toggleClass("show")
     }
   </script>
 </body>
