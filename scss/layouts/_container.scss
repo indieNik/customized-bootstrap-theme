@@ -1,16 +1,18 @@
-.container-actual {
-    width: 1126px;
-}
+/* 
+
+    This File contains Styles for Container Section that holds the main views of Backbone
+    
+*/
 
 .container {
-    width: 1220px!important;
-    max-width: 1440px !important;
+    width: 995px!important;
+    // max-width: 1440px !important;
 }
 
 @media only screen and (min-width: 1441px) {
     .container {
         width: 50vw !important;
-        max-width: 1270px !important;
+        max-width: 2560px !important;
         margin-top: 9.5rem !important;
     }
 }
