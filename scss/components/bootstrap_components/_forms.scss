@@ -23,6 +23,12 @@ input.form-control {
     cursor: pointer;
 }
 
+.form-check-title {
+    font-size: 0.9rem;
+    color: $dark;
+    font-weight: 400;
+}
+
 .form-check-input {
     font-size: 0.5rem;
     &:checked + .form-check-label {

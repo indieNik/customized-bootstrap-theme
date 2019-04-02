@@ -1,10 +1,4 @@
 .role-assessment-card {
-
-	.section-title {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
 	
 	.table-container {
 		.table {
@@ -14,13 +8,5 @@
 				}
 			}
 		}
-	}
-}
-
-.role-assessment-modal {
-	.form-check-title {
-		font-size: 0.9rem;
-		color: $dark;
-		font-weight: 400;
 	}
 }

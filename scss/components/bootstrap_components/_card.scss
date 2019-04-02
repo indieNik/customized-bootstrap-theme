@@ -40,6 +40,9 @@
 
     .card-body {
         .section-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             color: $silver;
             margin-bottom: 1rem;
         }
