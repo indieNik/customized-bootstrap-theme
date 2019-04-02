@@ -319,6 +319,105 @@
             </div>
           </div>
           <div class="col-lg-12 mt-lg-0 mt-4">
+            <div class="card role-assessment-card mb-2 mt-2">
+              <div class="card-header">
+                Recommendations
+                <div class="btn-toggle" onclick="toggleCardDisplay()">
+                  Hide
+                  <div class="fa fa-chevron-circle-up"></div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="section-title">
+                  Recommendation Log
+                  <div class="buttons">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#addRecommendationModal">
+                      Add
+                    </button>
+                    <button class="btn btn-outline-primary ml-3" data-toggle="modal" data-target="#requestRecommendationModal">
+                      Request
+                    </button>
+                  </div>
+                </div>
+                <div class="table-container">
+                  <table class="table feedback-table table-borderless">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Comment</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="mini-card">
+                            <img class="rounded-circle img-icon-small" src="https://source.unsplash.com/120x120/?face">
+                            <div class="details">
+                              <div class="title">Slavcho Karbashewski</div>
+                              <div class="caption">VP HR</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="mini-card">
+                            <div class="details">
+                              <div class="title">Dec 14, 2018</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="mini-card">
+                            <div class="details">
+                              <div class="comment">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione quam id omnis, nam
+                                minima iste sit odio iusto esse officia ipsa eos, quo hic aperiam, illum atque ea vitae
+                                sint placeat! Odio mollitia molestias expedita nihil doloribus, non libero incidunt
+                                reprehenderit amet! Non assumenda quam nemo incidunt iusto harum eaque.
+                                <div class="btn-more-mini">Hide</div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="mini-card">
+                            <img class="rounded-circle img-icon-small" src="https://source.unsplash.com/120x120/?face">
+                            <div class="details">
+                              <div class="title">Sukhnam Chander</div>
+                              <div class="caption">Implementation Engineer</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="mini-card">
+                            <div class="details">
+                              <div class="title">Dec 14, 2018</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="mini-card">
+                            <div class="details">
+                              <div class="comment">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type
+                                <div class="btn-more-mini">Show more</div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button class="btn-more">LOAD MORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 mt-lg-0 mt-4">
             <div class="card mb-2 mt-2">
               <div class="card-header">
                 Performance
@@ -789,7 +888,8 @@
               <label class="form-check-title" for="exampleFormControlTextarea1">
                 Assess Saami Al Samad for the next role
               </label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write an assessment"></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Write an assessment"></textarea>
             </div>
           </div>
           <div class="modal-footer add-certification-modal-footer">
@@ -938,6 +1038,68 @@
                 </div>
               </div>
               <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, cumque.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade role-assessment-modal" id="addRecommendationModal" tabindex="-1" role="dialog"
+      aria-labelledby="addCertificateModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addCertificateModalLabel">Recommendation</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">           
+            <div class="form-group">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Write a recommendation"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer add-certification-modal-footer">
+            <div class="buttons">
+              <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade role-assessment-modal" id="requestRecommendationModal" tabindex="-1" role="dialog"
+      aria-labelledby="addCertificateModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addCertificateModalLabel">Request Recommendation</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="form-check-title">
+                Request From
+              </label>
+              <select class="custom-select custom-select-sm">
+                <option selected>Select</option>
+                <option value="1">Marketing</option>
+                <option value="2">VP</option>
+                <option value="3">Implementation Engineer</option>
+                <option value="4">Senior Implementation Engineer</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Write a specific question"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer add-certification-modal-footer">
+            <div class="buttons">
+              <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Request</button>
             </div>
           </div>
         </div>
