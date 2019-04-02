@@ -14,6 +14,7 @@
         .competencies__title {
             @extend .mb-2, .font-weight-normal;
             font-size: $sub-title-font-size;
+            color: rgba($dark, .75);
         }
     }
 }
