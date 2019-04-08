@@ -1,0 +1,125 @@
+.reports-container {
+	.report-filters {
+		@extend .perfect-spaced-between;
+		margin-bottom: 1rem;
+		.input-group {
+			width: 300px;
+			input[type="text"] {
+				background-color: #fff;
+				border: none;
+				border-radius: 5px;
+				padding: 1rem;
+				z-index: 0;
+				&::placeholder {
+					color: $silver;
+					font-size: $font-12;
+					font-weight: $font-weight-400;
+				}
+			}
+			.input-group-append {
+				position: absolute;
+				top: 5px;
+				right: 0;
+				.input-group-text {
+					border: none;
+					.fa {
+						color: $silver;
+						font-size: $font-12;
+						font-weight: $font-weight-600;
+						z-index: 1;
+					}
+				}
+			}
+		}
+		.buttons {
+			.btn {
+				width: max-content;
+				min-width: 120px;
+				padding: .2rem .75rem;
+				font-size: $font-16;
+			}
+			.btn-outline-primary {
+				background-color: #fff;
+				&:hover {
+					background-color: $primary;
+				}
+			}
+			.btn-link-primary {
+				color: $primary;
+			}
+		}
+	}
+
+	.report-nav-tabs {
+		.nav-tabs {
+			border: 0;
+			.nav-item {
+				font-size: $font-14;
+				font-weight: $font-weight-300;
+				color: $silver;
+				padding: 0.8rem 1rem;
+				border: 0;
+				border-radius: $card-border-radius;
+				box-shadow: $card-box-shadow;
+				&.active {
+					color: $dark;
+					font-weight: $font-weight-400;
+					background-color: #fff;
+				}
+			}
+		}
+	}
+
+	.table-container {
+		position: relative;
+		border: none;
+		box-shadow: $card-box-shadow;
+		background-color: #fff;
+		.table {
+			td {
+				height: 65px;
+				padding: .85rem 1.3rem; // Global padding for table cells
+				vertical-align: middle;
+				tr.active {
+					background-color: #F8F8F8;
+				}
+				.previous-assessors-btn {
+					font-variant: normal;
+					text-transform: capitalize;
+					font-size: $font-12;
+					color: $primary;
+				}
+			}
+			tr.active {
+				background-color: #F8F8F8;
+				font-weight: $font-weight-400;
+				td .title {
+					color: $dark;
+				}
+			}
+			thead {
+				tr th {
+					color: $info;
+					font-size: $font-14;
+					font-weight: $font-weight-400;
+					width: fit-content;
+				}
+			}
+			tbody {
+				tr {
+					border-bottom: 2px solid lighten($color: $silver, $amount: 25%);
+					td {
+						font-size: $font-12;
+						color: $silver;
+						.mini-card {
+							padding-left: 0;
+							.title {
+								font-size: $font-12;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
