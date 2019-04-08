@@ -129,5 +129,22 @@
 				}
 			}
 		}
+
+		.pagination-container {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			position: absolute;
+			right: 0;
+			font-size: $font-12;
+			color: $dark;
+			font-weight: $font-weight-400;
+			.btn {
+				font-size: $font-22;
+				width: fit-content;
+				color: $silver;
+				margin-top: -10px;
+			}
+		}
 	}
 }
