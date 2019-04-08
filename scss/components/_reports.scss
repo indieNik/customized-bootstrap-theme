@@ -76,6 +76,14 @@
 		box-shadow: $card-box-shadow;
 		background-color: #fff;
 		.table {
+
+			&.sticky {
+				th:first-child, td:first-child {
+					box-shadow: 8px 0px 8px #e3e3e34d;
+					width: 200px;
+				}
+			}
+			
 			td {
 				height: 65px;
 				padding: .85rem 1.3rem; // Global padding for table cells
