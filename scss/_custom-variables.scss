@@ -2,23 +2,30 @@
 // You can find them in node_modules/bootstrap/scss/_variables.scss
 // Copy the variables you need into this file, don't modify files under node_modules/
 
-// Some example variables that you can uncomment:
-
-// Overriding Typography
+// Typography
 $font-family-base: 'Lato', sans-serif;
-$font-weight: 300;
-$font-weight-light: 100;
-$font-weight-base: $font-weight;
-$font-weight-regular: 400;
-$sub-title-font-size: 0.8rem;
-$table-data-font-size: 0.75rem;
-$sub-caption-font-size: 0.75rem;
+
+// Font Weights
+$font-weight-100: 100;
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-600: 600;
+$font-weight-base: $font-weight-300;
+
+// Font Sizes
+$font-28: 28px; // Engagement Stats
+$font-22: 22px; // Profile User Name, Performance Goal Stats
+$font-16: 16px; // Profile User Role, Card Title, Section Title 
+$font-14: 14px; // Profile User Stats, Profile Stats Title, Load More Btn
+$font-12: 12px; // Profile Stats Caption, Competency Tags, Table Headers, Cert Title, etc
+$font-10: 10px; // Cert Caption
 
 // Image Icons Width
 $img-icon-small: 40px;
 
 // Enabling shadows and gradients
 $enable-shadows: true;
+$card-box-shadow: 1px 2px 8px 0 #E3E3E3;
 //$enable-gradients: true;
 
 // Changing the border radius of buttons
@@ -28,13 +35,13 @@ $enable-shadows: true;
 $primary: #EE5B36;
 //$secondary: #436296;
 //$success: #2bc550;
-$info: #8aaad5;
+$info: #7199CD;
 //$warning: #ef8143;
 //$danger: #ff293a;
 $light: #f8f8f8;
 $dark: #102e5d;
-$silver: #b1bdce;
-$blue: #1675BC;
+$silver: #A6B4C7;
+$blue: #0D72BA;
 
 // Changing the body background and text
 $body-bg: #f8f8f8;
@@ -48,7 +55,7 @@ $theme-colors: (
 // Card Variables Override
 $card-cap-bg: #fff;
 // $card-bg: #fff;
-// $card-border-radius: 0.6rem;
+$card-border-radius: 4px;
 //$card-border-width: 0;
 $card-border-color: rgba(0,0,0,0.10);
 // $card-cap-color: #102e5d;

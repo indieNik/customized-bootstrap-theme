@@ -1,6 +1,6 @@
 .card {
     border: none;
-    box-shadow: 0 0 1rem .1rem rgba(#000, .075);
+    box-shadow: $card-box-shadow;
     .card-header {
 
         display: flex;

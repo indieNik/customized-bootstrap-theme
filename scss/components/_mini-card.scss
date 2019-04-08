@@ -9,11 +9,11 @@
         flex-direction: column;
         margin-left: 10px;
         .title {
-            font-size: $sub-title-font-size;
-            @extend .font-weight-normal;
+            font-size: $font-14;
+            font-weight:  $font-weight-400;
         }
         .caption {
-            font-size: $sub-caption-font-size;
+            font-size: $font-12;
             color: $silver;
         }
         .meta-text {
@@ -22,12 +22,12 @@
         }
         .comment {
             color: $dark;
-            font-size: $sub-caption-font-size;
+            font-size: $font-12;
         }
         .hashtag {
             @extend .mt-2, .mb-2;
             color: $info;
-            font-size: $sub-caption-font-size;
+            font-size: $font-12;
         }
         .dropdown {
             opacity: 0;

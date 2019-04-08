@@ -13,14 +13,14 @@
 			line-height: 2;
 		}
 		&__user-name {
-			font-size: 1.3rem;
-    	font-weight: 400;
+			font-size: $font-22;
+    		font-weight: $font-weight-400;
 			color: $dark;
 		}
 		&__user-position {
-			font-size: 0.9rem;
-    	font-weight: 400;
-			color: rgba($dark, .75);
+			font-size: $font-16;
+    		font-weight: $font-weight-400;
+			color: $dark;
 		}
 		&__manager, &__department, &__business-unit {
 			font-size: 0.8rem;

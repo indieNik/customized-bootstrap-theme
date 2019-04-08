@@ -12,8 +12,8 @@
     .details {
         .title {
             color: $info;
-            font-size: 0.8rem;
-            font-weight: 100 !important;
+            font-size: $font-14;
+            font-weight: $font-weight-300;
         }
     }
     &.active {
@@ -21,7 +21,7 @@
         color: $blue;
         .title {
             color: $blue;
-            font-weight: 400 !important;
+            font-weight: $font-weight-400;
         }
     }
 }

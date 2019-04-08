@@ -2,12 +2,8 @@ table.dataTable {
 		
 	thead tr {
 		th {
-			font-size: 100%;
-			font-weight: $font-weight-regular;
 			padding: 1rem 1.3rem 1rem 0;
 			width: 30%;
-			border: 0;
-			border-bottom: 1px solid $silver;
 		}
 	}
 	
@@ -20,7 +16,7 @@ table.dataTable {
 		}
 	}
 
-	font-size: $table-data-font-size;
-	font-weight: $font-weight-regular;
+	font-size: $font-12;
+	font-weight: $font-weight-300;
 	
 }
