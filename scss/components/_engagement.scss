@@ -5,8 +5,7 @@
 }
 
 .engagement-card {
-    @extend .mini-card, .d-inline-block;
-    margin-right: 2rem;
+    @extend .mini-card, .d-inline-block, .flex-fill ;
     .details {
         .title {
             color: $silver;
@@ -21,6 +20,7 @@
             align-items: center;
         }
         .engagement-modal-card {
+            width: 150px;
             .comment {
                 color: $silver;
             }
