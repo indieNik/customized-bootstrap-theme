@@ -6,16 +6,32 @@
         font-weight: 400;
         margin-bottom: 1rem;
     }
-    .members-search {
-        background-color: transparent;
-        border: none;
+    .input-group {
         border-bottom: 1px solid $silver;
-        border-radius: 0;
-        padding: 0;
-        &::placeholder {
-            color: $silver;
-            font-size: 0.8rem;
-            font-weight: $font-weight-400;
+        .members-search {
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+            padding: 0;
+            &::placeholder {
+                color: $silver;
+                font-size: 0.8rem;
+                font-weight: $font-weight-400;
+                padding: 0.5rem;
+            }
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        .input-group-append {
+            .input-group-text {
+                border: none;
+                .fa {
+                    color: $silver;
+                    font-size: $font-12;
+                    font-weight: $font-weight-600;
+                }
+            }
         }
     }
     .members-container {
