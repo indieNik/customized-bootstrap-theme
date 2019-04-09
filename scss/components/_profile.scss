@@ -23,10 +23,12 @@
 			color: $dark;
 		}
 		&__manager, &__department, &__business-unit {
+			display: flex;
 			font-size: 0.8rem;
 			.title {
 				display: inline-block;
 				color: $silver;
+				margin-right: 5px;
 			}
 			.caption {
 				display: inline-block;
