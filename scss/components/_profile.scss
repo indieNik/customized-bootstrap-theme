@@ -2,7 +2,7 @@
 	margin-bottom: 1.5rem;
 	.profile {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		
 		&__details {
 			display: flex;
@@ -10,7 +10,8 @@
 			justify-content: space-between;
 			align-items: flex-start;
 			margin-left: 20px;
-			line-height: 2;
+			margin-top: -10px;
+			line-height: 1.8;
 		}
 		&__user-name {
 			font-size: $font-22;
@@ -24,7 +25,7 @@
 		}
 		&__manager, &__department, &__business-unit {
 			display: flex;
-			font-size: 0.8rem;
+			font-size: $font-14;
 			.title {
 				display: inline-block;
 				color: $silver;
