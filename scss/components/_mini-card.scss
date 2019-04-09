@@ -32,7 +32,7 @@
         .dropdown {
             opacity: 0;
             height: 0;
-            width: 13rem;
+            width: 17rem;
             max-height: 300px;
             position: absolute;
             top: 40px;
@@ -44,6 +44,12 @@
             &.show {
                 opacity: 1;
                 height: auto;
+            }
+            .card-body {
+                padding: 0 1rem 1rem 1rem;
+                .mini-card {
+                    margin-top: 1rem;
+                }
             }
         }
     }
