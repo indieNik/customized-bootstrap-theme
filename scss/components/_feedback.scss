@@ -9,6 +9,8 @@
     @extend .mini-card, .cursor-pointer;
     padding: 1rem;
     color: $blue;
+    width: 175px;
+    justify-content: space-evenly;
     .details {
         .title {
             color: $info;
