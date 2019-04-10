@@ -1,4 +1,5 @@
 .table {
+    font-size: $font-12;
     thead {
         border-bottom: 1px solid rgba(#000, .075);
         tr th {
@@ -8,17 +9,85 @@
             font-weight: $font-weight-300;
         }
     }
+    tbody {
+        td {
+            border: 0;
+            .date {
+                color: $silver;
+            }
+        }
+    }
 }
 
 .table-container {
     border: 1px solid rgba(#000, .075);
     border-radius: 0.25rem;
     .table {
-        th {
-            width: 11rem;
+
+        thead {
+            tr th {
+                color: $info;
+                font-weight: $font-weight-400;
+                width: 174px;
+            }
         }
+
+        tbody {
+            display:block;
+            max-height: calc(100vh - 500px);
+            overflow: scroll;
+            tr {
+                border-bottom: 2px solid lighten($color: $silver, $amount: 25%);
+                td {
+                    // font-size: $font-12;
+                    color: $silver;
+                    .mini-card {
+                        padding-left: 0;
+                        .title {
+                            // font-size: $font-12;
+                        }
+                    }
+                }
+            }
+        }
+
+        thead, tbody tr {
+            display: table;
+            width: 100%;
+            table-layout:fixed;
+        }
+        
+        tr.active {
+            background-color: #F8F8F8;
+            font-weight: $font-weight-400;
+            td .title {
+                color: $dark;
+            }
+        }
+
         td {
-            padding: 0.85rem 0.75rem;
+            height: 65px;
+            padding: .85rem 1.3rem; // Global padding for table cells
+            vertical-align: middle;
+            tr.active {
+                background-color: #F8F8F8;
+            }
+            .previous-assessors-btn {
+                font-variant: normal;
+                text-transform: capitalize;
+                // font-size: $font-12;
+                color: $primary;
+            }
+        }
+
+        &.sticky {
+            th:first-child, td:first-child {
+                box-shadow: 8px 0px 8px #e3e3e34d;
+            }
+            td:first-child {
+                width: 174px;
+                padding-left: 0.75rem;
+            }
         }
     }
 }

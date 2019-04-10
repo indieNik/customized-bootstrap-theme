@@ -61,7 +61,7 @@
             <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" id="nav-general-reports" role="tabpanel" aria-labelledby="nav-general-reports-tab">
                 <div class="table-container">
-                  <table class="table table-borderless sticky">
+                  <table id="general-reports-table" class="table table-borderless sticky">
                     <thead>
                       <tr>
                         <th>Name</th>
@@ -575,18 +575,11 @@
                       </tr>
                     </tbody>
                   </table>
-                  <div class="pagination-container">
-                    <span class="pages">
-                        Showing 1 - 8 of 8
-                    </span>
-                    <button class="btn btn-sm btn-link"><</button>
-                    <button class="btn btn-sm btn-link">></button>
-                  </div>
                 </div>
               </div>
               <div class="tab-pane fade" id="nav-role-readiness-reports" role="tabpanel" aria-labelledby="nav-role-readiness-reports-tab">
                 <div class="table-container">
-                  <table class="table table-borderless">
+                  <table id="role-readiness-reports-table" class="table table-borderless">
                     <thead>
                       <tr>
                         <th>Name</th>
@@ -598,7 +591,7 @@
                         <th></th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="scroll-active">
                       <tr>
                         <td>
                           <div class="mini-card">
@@ -653,30 +646,10 @@
                         <td>
                           <div class="title">12</div>
                         </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="mini-card">
-                            <img class="rounded-circle img-icon-mini" src="https://source.unsplash.com/120x120/?face">
-                            <div class="details">
-                              <div class="title">Hu My</div>
-                            </div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="title">Senior Implementation Engineer</div>
-                        </td>
-                        <td>
-                          <div class="title">Senior Implementation Engineer</div>
-                        </td>
-                        <td>
-                          <div class="title">Senior Implementation Engineer</div>
-                        </td>
-                        <td>
-                          <div class="title">125</div>
-                        </td>
-                        <td>
-                          <div class="title">12</div>
+                      <td>
+                          <button class="btn btn-sm btn-link-primary previous-assessors-btn">
+                            Previous Assessors
+                          </button>
                         </td>
                       </tr>
                       <tr>
@@ -702,6 +675,161 @@
                         </td>
                         <td>
                           <div class="title">12</div>
+                        </td>
+                      <td>
+                          <button class="btn btn-sm btn-link-primary previous-assessors-btn">
+                            Previous Assessors
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="mini-card">
+                            <img class="rounded-circle img-icon-mini" src="https://source.unsplash.com/120x120/?face">
+                            <div class="details">
+                              <div class="title">Hu My</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="title">Senior Implementation Engineer</div>
+                        </td>
+                        <td>
+                          <div class="title">Senior Implementation Engineer</div>
+                        </td>
+                        <td>
+                          <div class="title">Senior Implementation Engineer</div>
+                        </td>
+                        <td>
+                          <div class="title">125</div>
+                        </td>
+                        <td>
+                          <div class="title">12</div>
+                        </td>
+                      <td>
+                          <button class="btn btn-sm btn-link-primary previous-assessors-btn">
+                            Previous Assessors
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="mini-card">
+                            <img class="rounded-circle img-icon-mini" src="https://source.unsplash.com/120x120/?face">
+                            <div class="details">
+                              <div class="title">Hu My</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="title">Senior Implementation Engineer</div>
+                        </td>
+                        <td>
+                          <div class="title">Senior Implementation Engineer</div>
+                        </td>
+                        <td>
+                          <div class="title">Senior Implementation Engineer</div>
+                        </td>
+                        <td>
+                          <div class="title">125</div>
+                        </td>
+                        <td>
+                          <div class="title">12</div>
+                        </td>
+                      <td>
+                          <button class="btn btn-sm btn-link-primary previous-assessors-btn">
+                            Previous Assessors
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="mini-card">
+                            <img class="rounded-circle img-icon-mini" src="https://source.unsplash.com/120x120/?face">
+                            <div class="details">
+                              <div class="title">Hu My</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="title">Senior Implementation Engineer</div>
+                        </td>
+                        <td>
+                          <div class="title">Senior Implementation Engineer</div>
+                        </td>
+                        <td>
+                          <div class="title">Senior Implementation Engineer</div>
+                        </td>
+                        <td>
+                          <div class="title">125</div>
+                        </td>
+                        <td>
+                          <div class="title">12</div>
+                        </td>
+                      <td>
+                          <button class="btn btn-sm btn-link-primary previous-assessors-btn">
+                            Previous Assessors
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="mini-card">
+                            <img class="rounded-circle img-icon-mini" src="https://source.unsplash.com/120x120/?face">
+                            <div class="details">
+                              <div class="title">Hu My</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="title">Senior Implementation Engineer</div>
+                        </td>
+                        <td>
+                          <div class="title">Senior Implementation Engineer</div>
+                        </td>
+                        <td>
+                          <div class="title">Senior Implementation Engineer</div>
+                        </td>
+                        <td>
+                          <div class="title">125</div>
+                        </td>
+                        <td>
+                          <div class="title">12</div>
+                        </td>
+                      <td>
+                          <button class="btn btn-sm btn-link-primary previous-assessors-btn">
+                            Previous Assessors
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="mini-card">
+                            <img class="rounded-circle img-icon-mini" src="https://source.unsplash.com/120x120/?face">
+                            <div class="details">
+                              <div class="title">Hu My</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="title">Senior Implementation Engineer</div>
+                        </td>
+                        <td>
+                          <div class="title">Senior Implementation Engineer</div>
+                        </td>
+                        <td>
+                          <div class="title">Senior Implementation Engineer</div>
+                        </td>
+                        <td>
+                          <div class="title">125</div>
+                        </td>
+                        <td>
+                          <div class="title">12</div>
+                        </td>
+                      <td>
+                          <button class="btn btn-sm btn-link-primary previous-assessors-btn">
+                            Previous Assessors
+                          </button>
                         </td>
                       </tr>
                     </tbody>
@@ -1057,6 +1185,25 @@
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"
       crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready( function () {
+        $('#general-reports-table').DataTable({
+          "searching": false,
+          "ordering":  false,
+          "paging":  false,
+          // "info":  false
+        });
+      } );
+      $(document).ready( function () {
+        $('#role-readiness-reports-table').DataTable({
+          "searching": false,
+          "ordering":  false,
+          "paging":  false,
+          // "info":  false
+        });
+      } );
+    </script>
     <script>
       var showAttachmentInput = function () {
         document.getElementById("add-cert-modal-input").classList.toggle("show");
