@@ -45,7 +45,9 @@
                     .mini-card {
                         padding-left: 0;
                         .title {
-                            // font-size: $font-12;
+                            font-size: $font-12;
+                            color: $dark;
+                            font-weight: $font-weight-300;
                         }
                     }
                 }
