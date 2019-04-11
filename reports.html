@@ -44,9 +44,61 @@
                 <button class="btn btn-link-primary text-link" data-toggle="modal" data-target="#savedSearchesModal">
                   Saved Searches
                 </button>
-                <button class="btn btn-outline-primary ml-3">
+                <button class="btn btn-outline-primary ml-3" onclick="toggleManageColumnsDropdown()">
                   Manage Columns
                 </button>
+                <div class="card dropdown scroll-active">
+                  <div class="card-body">
+                    <div class="mini-card">
+                      <div class="form-check form-control-sm">
+                        <input type="checkbox" class="form-check-input" id="certificationExpCheck">
+                        <label class="form-check-label" for="certificationExpCheck">Name</label>
+                      </div>
+                    </div>
+                    <div class="mini-card">
+                      <div class="form-check form-control-sm">
+                        <input type="checkbox" class="form-check-input" id="Role">
+                        <label class="form-check-label" for="Role">Role</label>
+                      </div>
+                    </div>
+                    <div class="mini-card">
+                      <div class="form-check form-control-sm">
+                        <input type="checkbox" class="form-check-input" id="Department">
+                        <label class="form-check-label" for="Department">Department</label>
+                      </div>
+                    </div>
+                    <div class="mini-card">
+                      <div class="form-check form-control-sm">
+                        <input type="checkbox" class="form-check-input" id="Business">
+                        <label class="form-check-label" for="Business">Business Unit</label>
+                      </div>
+                    </div>
+                    <div class="mini-card">
+                      <div class="form-check form-control-sm">
+                        <input type="checkbox" class="form-check-input" id="Gamification">
+                        <label class="form-check-label" for="Gamification">Gamification Points</label>
+                      </div>
+                    </div>
+                    <div class="mini-card">
+                      <div class="form-check form-control-sm">
+                        <input type="checkbox" class="form-check-input" id="Certifications">
+                        <label class="form-check-label" for="Certifications">Certifications</label>
+                      </div>
+                    </div>
+                    <div class="mini-card">
+                      <div class="form-check form-control-sm">
+                        <input type="checkbox" class="form-check-input" id="Goal">
+                        <label class="form-check-label" for="Goal">Goal Progress</label>
+                      </div>
+                    </div>
+                    <div class="mini-card">
+                      <div class="form-check form-control-sm">
+                        <input type="checkbox" class="form-check-input" id="GoalCheckin">
+                        <label class="form-check-label" for="GoalCheckin">Goal Check-in</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <button class="btn btn-outline-primary ml-3">
                   Filter
                 </button>
@@ -1045,9 +1097,10 @@
           $(this).css("display", "none !important");
         });
       }
-      function toggleDropdown() {
+      function toggleManageColumnsDropdown() {
         var el = $(event.target);
-        $(el[0].nextSibling.nextSibling.nextSibling.nextSibling).toggleClass("show")
+        console.log(el);
+        $(el[0].nextSibling.nextSibling).toggleClass("show")
       }
     </script>
 </body>
