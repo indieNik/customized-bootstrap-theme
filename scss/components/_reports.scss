@@ -77,3 +77,38 @@
 		background-color: #fff;
 	}
 }
+
+.modal {
+	.modal-header {
+		padding: .5rem 1.3rem;
+	}
+	.modal-body {
+		padding: 0 1.3rem;
+	}
+	.reports-modal-card {
+		@extend .mini-card ;
+		justify-content: space-between;
+		padding: 15px 0;
+		.details {
+			margin-left: 0;
+			width: 50%;
+		}
+		.date {
+			font-size: $font-12;
+			color: $silver;
+			font-weight: $font-weight-400;
+		}
+		.btn-link-primary {
+			color: $primary;
+			font-variant: normal;
+			text-transform: uppercase;
+			font-weight: $font-weight-400;
+			font-size: $font-12;
+		}
+		.hover-actions {
+			width: 50px;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}

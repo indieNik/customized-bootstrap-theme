@@ -41,7 +41,7 @@
                 </div>
               </div>
               <div class="buttons">
-                <button class="btn btn-link-primary text-link">
+                <button class="btn btn-link-primary text-link" data-toggle="modal" data-target="#savedSearchesModal">
                   Saved Searches
                 </button>
                 <button class="btn btn-outline-primary ml-3">
@@ -842,329 +842,149 @@
       </div>
 
       <!--  Modals  -->
-      <div class="modal fade" id="moreCompetenciesModal" tabindex="-1" role="dialog"
-        aria-labelledby="moreCompetenciesModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-dialog-scrollable" role="document">
+      <div class="modal fade" id="savedSearchesModal" tabindex="-1" role="dialog"
+        aria-labelledby="savedSearchesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg scroll-active" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="moreCompetenciesModalLabel">Competencies</h5>
+              <h5 class="modal-title" id="savedSearchesModalLabel">Saved Searches</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <div class="mini-card mb-4">
+              <div class="reports-modal-card">
                 <div class="details">
-                  <div class="title text-info">Responsibility</div>
-                  <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, provident?
+                  <div class="title">Admin Filter 1</div>
+                  <div class="caption">
+                    Acquisition, Artificial Intelligence, Business Unit 3, Rank
+                    <div class="btn-more-mini" data-toggle="modal" data-target="#moreCompetenciesModal">
+                      More...
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="mini-card mb-4">
-                <div class="details">
-                  <div class="title text-info">Teamwork</div>
-                  <div class="caption"></div>
-                </div>
-              </div>
-              <div class="mini-card mb-4">
-                <div class="details">
-                  <div class="title text-info">Leadership</div>
-                  <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, provident?
-                  </div>
-                </div>
-              </div>
-              <div class="mini-card mb-4">
-                <div class="details">
-                  <div class="title text-info">Communication</div>
-                  <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, provident?
-                  </div>
-                </div>
-              </div>
-              <div class="mini-card mb-4">
-                <div class="details">
-                  <div class="title text-info">Responsibility</div>
-                  <div class="caption"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="viewCertificateModal" tabindex="-1" role="dialog"
-        aria-labelledby="viewCertificateModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="addCertificateModalLabel">Certificate</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="certification-modal-card">
-                <div class="details">
-                  <div class="title">Accounting Qualification Excelence</div>
-                  <div class="caption">Accounting Institute</div>
-                  <div class="meta-text">Valid Till: Dec 14, 2018</div>
-                </div>
+                <div class="date">Dec 14, 2018</div>
+                <button class="btn btn-sm btn-link-primary">
+                  Apply
+                </button>
                 <div class="hover-actions">
-                  <div class="fa fa-paperclip"></div>
-                  <div class="fa fa-edit" data-toggle="modal" data-target="#addCertificateModal"></div>
+                  <div class="fa fa-edit"></div>
                   <div class="fa fa-trash"></div>
                 </div>
-                <div class="cert-download-btn">
-                  Download
-                </div>
               </div>
-              <div class="certificate-image">
-                <img src="https://source.unsplash.com/530x530/" alt="Certificate Image">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade add-certification-modal" id="addCertificateModal" tabindex="-1" role="dialog"
-        aria-labelledby="addCertificateModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="addCertificateModalLabel">Add Certification</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="form-group">
-                <input class="form-control form-control-sm mb-3" type="text" placeholder="Certification Name">
-                <input class="form-control form-control-sm mb-3" type="text" placeholder="Certification Authority">
-              </div>
-              <div class="form-check form-control-sm">
-                <input type="checkbox" class="form-check-input" id="certificationExpCheck">
-                <label class="form-check-label" for="certificationExpCheck">This Certificate does not expire</label>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="input-group">
-                    <input type="text" class="form-control form-control-sm" placeholder="Start" aria-label="Start"
-                      aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <span class="input-group-text">
-                        <i class="fa fa-calendar"></i>
-                      </span>
+              <div class="reports-modal-card">
+                <div class="details">
+                  <div class="title">Admin Filter 1</div>
+                  <div class="caption">
+                    Acquisition, Artificial Intelligence, Business Unit 3, Rank
+                    <div class="btn-more-mini" data-toggle="modal" data-target="#moreCompetenciesModal">
+                      More...
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="input-group">
-                    <input type="text" class="form-control form-control-sm" placeholder="End" aria-label="End"
-                      aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <span class="input-group-text">
-                        <i class="fa fa-calendar"></i>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer add-certification-modal-footer">
-              <div id="add-cert-modal-input" class="attachments">
-                <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="customFile">
-                  <label class="custom-file-label" for="customFile">Choose file</label>
-                </div>
-              </div>
-              <div class="buttons">
-                <button onclick="showAttachmentInput()" type="button" class="btn btn-link text-info">
-                  <i class="fa fa-paperclip"></i> Attachment
+                <div class="date">Dec 14, 2018</div>
+                <button class="btn btn-sm btn-link-primary">
+                  Apply
                 </button>
-                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary">Add</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="roleAssessmentModal" tabindex="-1" role="dialog"
-        aria-labelledby="addCertificateModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="addCertificateModalLabel">Assessment</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="form-group">
-                <label class="form-check-title">
-                  What's the next suitable role for Saami Al Samad?
-                </label>
-                <select class="custom-select custom-select-sm">
-                  <option selected>Select Role</option>
-                  <option value="1">Marketing</option>
-                  <option value="2">VP</option>
-                  <option value="3">Implementation Engineer</option>
-                  <option value="4">Senior Implementation Engineer</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                    value="option1">
-                  <label class="form-check-label" for="inlineRadio1">Ready</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                    value="option2">
-                  <label class="form-check-label" for="inlineRadio2">Ready in 6 months</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                    value="option3">
-                  <label class="form-check-label" for="inlineRadio3">Ready in 1-2 years</label>
+                <div class="hover-actions">
+                  <div class="fa fa-edit"></div>
+                  <div class="fa fa-trash"></div>
                 </div>
               </div>
-              <div class="form-group">
-                <label class="form-check-title" for="exampleFormControlTextarea1">
-                  Assess Saami Al Samad for the next role
-                </label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                  placeholder="Write an assessment"></textarea>
-              </div>
-            </div>
-            <div class="modal-footer add-certification-modal-footer">
-              <div class="buttons">
-                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary">Add</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="engagementBadgesModal" tabindex="-1" role="dialog"
-        aria-labelledby="engagementBadgesModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-dialog-scrollable" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="engagementBadgesModalLabel">Badges</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="engagement-modal-card">
-                <div class="mini-card">
-                  <img class="img-icon-small" src="http://gamify.invodx.com/images/engager.png">
-                  <div class="details">
-                    <div class="title">23</div>
-                    <div class="comment">Result-driven</div>
+              <div class="reports-modal-card">
+                <div class="details">
+                  <div class="title">Admin Filter 1</div>
+                  <div class="caption">
+                    Acquisition, Artificial Intelligence, Business Unit 3, Rank
+                    <div class="btn-more-mini" data-toggle="modal" data-target="#moreCompetenciesModal">
+                      More...
+                    </div>
                   </div>
                 </div>
-                <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, cumque.
+                <div class="date">Dec 14, 2018</div>
+                <button class="btn btn-sm btn-link-primary">
+                  Apply
+                </button>
+                <div class="hover-actions">
+                  <div class="fa fa-edit"></div>
+                  <div class="fa fa-trash"></div>
                 </div>
               </div>
-              <div class="engagement-modal-card">
-                <div class="mini-card">
-                  <img class="img-icon-small" src="http://gamify.invodx.com/images/wise_owl.png">
-                  <div class="details">
-                    <div class="title">40</div>
-                    <div class="comment">Customer-centric</div>
+              <div class="reports-modal-card">
+                <div class="details">
+                  <div class="title">Admin Filter 1</div>
+                  <div class="caption">
+                    Acquisition, Artificial Intelligence, Business Unit 3, Rank
+                    <div class="btn-more-mini" data-toggle="modal" data-target="#moreCompetenciesModal">
+                      More...
+                    </div>
                   </div>
                 </div>
+                <div class="date">Dec 14, 2018</div>
+                <button class="btn btn-sm btn-link-primary">
+                  Apply
+                </button>
+                <div class="hover-actions">
+                  <div class="fa fa-edit"></div>
+                  <div class="fa fa-trash"></div>
+                </div>
               </div>
-              <div class="engagement-modal-card">
-                <div class="mini-card">
-                  <img class="img-icon-small" src="http://gamify.invodx.com/images/engager.png">
-                  <div class="details">
-                    <div class="title">23</div>
-                    <div class="comment">Result-driven</div>
+              <div class="reports-modal-card">
+                <div class="details">
+                  <div class="title">Admin Filter 1</div>
+                  <div class="caption">
+                    Acquisition, Artificial Intelligence, Business Unit 3, Rank
+                    <div class="btn-more-mini" data-toggle="modal" data-target="#moreCompetenciesModal">
+                      More...
+                    </div>
                   </div>
                 </div>
-                <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, cumque.
+                <div class="date">Dec 14, 2018</div>
+                <button class="btn btn-sm btn-link-primary">
+                  Apply
+                </button>
+                <div class="hover-actions">
+                  <div class="fa fa-edit"></div>
+                  <div class="fa fa-trash"></div>
                 </div>
               </div>
-              <div class="engagement-modal-card">
-                <div class="mini-card">
-                  <img class="img-icon-small" src="http://gamify.invodx.com/images/wise_owl.png">
-                  <div class="details">
-                    <div class="title">40</div>
-                    <div class="comment">Customer-centric</div>
+              <div class="reports-modal-card">
+                <div class="details">
+                  <div class="title">Admin Filter 1</div>
+                  <div class="caption">
+                    Acquisition, Artificial Intelligence, Business Unit 3, Rank
+                    <div class="btn-more-mini" data-toggle="modal" data-target="#moreCompetenciesModal">
+                      More...
+                    </div>
                   </div>
                 </div>
+                <div class="date">Dec 14, 2018</div>
+                <button class="btn btn-sm btn-link-primary">
+                  Apply
+                </button>
+                <div class="hover-actions">
+                  <div class="fa fa-edit"></div>
+                  <div class="fa fa-trash"></div>
+                </div>
               </div>
-              <div class="engagement-modal-card">
-                <div class="mini-card">
-                  <img class="img-icon-small" src="http://gamify.invodx.com/images/engager.png">
-                  <div class="details">
-                    <div class="title">23</div>
-                    <div class="comment">Result-driven</div>
+              <div class="reports-modal-card">
+                <div class="details">
+                  <div class="title">Admin Filter 1</div>
+                  <div class="caption">
+                    Acquisition, Artificial Intelligence, Business Unit 3, Rank
+                    <div class="btn-more-mini" data-toggle="modal" data-target="#moreCompetenciesModal">
+                      More...
+                    </div>
                   </div>
                 </div>
-                <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, cumque.
+                <div class="date">Dec 14, 2018</div>
+                <button class="btn btn-sm btn-link-primary">
+                  Apply
+                </button>
+                <div class="hover-actions">
+                  <div class="fa fa-edit"></div>
+                  <div class="fa fa-trash"></div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="addRecommendationModal" tabindex="-1" role="dialog"
-        aria-labelledby="addCertificateModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="addCertificateModalLabel">Recommendation</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                  placeholder="Write a recommendation"></textarea>
-              </div>
-            </div>
-            <div class="modal-footer add-certification-modal-footer">
-              <div class="buttons">
-                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary">Add</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="requestRecommendationModal" tabindex="-1" role="dialog"
-        aria-labelledby="addCertificateModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="addCertificateModalLabel">Request Recommendation</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="form-group">
-                <label class="form-check-title">
-                  Request From
-                </label>
-                <select class="custom-select custom-select-sm">
-                  <option selected>Select</option>
-                  <option value="1">Marketing</option>
-                  <option value="2">VP</option>
-                  <option value="3">Implementation Engineer</option>
-                  <option value="4">Senior Implementation Engineer</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                  placeholder="Write a specific question"></textarea>
-              </div>
-            </div>
-            <div class="modal-footer add-certification-modal-footer">
-              <div class="buttons">
-                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary">Request</button>
               </div>
             </div>
           </div>
