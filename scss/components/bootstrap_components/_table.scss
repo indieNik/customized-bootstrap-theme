@@ -34,8 +34,9 @@
 
         tbody {
             display:block;
-            max-height: calc(100vh - 500px);
+            max-height: 400px;
             overflow: scroll;
+            @extend .scroll-active ;
             tr {
                 border-bottom: 2px solid lighten($color: $silver, $amount: 25%);
                 td {
@@ -66,7 +67,6 @@
         }
 
         td {
-            height: 65px;
             padding: .85rem 1.3rem; // Global padding for table cells
             vertical-align: middle;
             tr.active {
