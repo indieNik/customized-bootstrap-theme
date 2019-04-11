@@ -3,6 +3,14 @@
     font-variant: all-small-caps;
 }
 
+.btn-link-primary {
+    color: $primary;
+}
+
+.btn-link-info {
+    color: $info;
+}
+
 .btn-more {
     @extend .btn, .btn-lg, .btn-link, .d-inline, .text-uppercase, .text-primary, .text-decoration-none, .mt-n3, .mb-2, .cursor-pointer;
     width: max-content !important;

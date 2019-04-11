@@ -894,7 +894,7 @@
       </div>
 
       <!--  Modals  -->
-      <div class="modal fade" id="savedSearchesModal" tabindex="-1" role="dialog" aria-labelledby="savedSearchesModalLabel" aria-hidden="true">
+      <div class="modal fade saved-searches-modal" id="savedSearchesModal" tabindex="-1" role="dialog" aria-labelledby="savedSearchesModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg scroll-active" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -1041,8 +1041,8 @@
           </div>
         </div>
       </div>
-      <div class="modal fade add-certification-modal" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterLabel">
-        <div class="modal-dialog" role="document">
+      <div class="modal fade filter-modal" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterLabel">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="filterLabel">Filters</h5>
@@ -1057,14 +1057,23 @@
                  <button class="btn btn-sm btn-link-primary">Clear All</button>
                </div>
                <div class="tags">
-                 <div class="tag tag--blue">Acquisition</div>
-                 <div class="tag tag--blue">Artificial Intelligence</div>
-                 <div class="tag tag--blue">Business Unit</div>
+                 <div class="tag tag-mini tag--blue">Acquisition</div>
+                 <div class="tag tag-mini tag--blue">Artificial Intelligence</div>
+                 <div class="tag tag-mini tag--blue">Business Unit</div>
+                 <div class="tag tag-mini tag--blue">Business Unit</div>
+                 <div class="tag tag-mini tag--blue">Business Unit</div>
+                 <div class="tag tag-mini tag--blue">Business Unit</div>
+                 <div class="tag tag-mini tag--blue">Business Unit</div>
+                 <div class="tag tag-mini tag--blue">Business Unit</div>
+                 <div class="tag tag-mini tag--blue">Business Unit</div>
+                 <div class="btn-more-mini" data-toggle="modal" data-target="#moreCompetenciesModal">
+                    More...
+                  </div>
                </div>
              </div>
              <div class="filters-container">
                <div class="filter-column">
-                 <div class="filter-name">Business Unit</div>
+                 <div class="filter-name active">Business Unit</div>
                  <div class="filter-name">Department</div>
                  <div class="filter-name">Current Role</div>
                  <div class="filter-name">Certifications</div>
@@ -1114,9 +1123,9 @@
                </div>
              </div>
             </div>
-            <div class="modal-footer add-certification-modal-footer">
+            <div class="modal-footer">
               <div class="buttons">
-                <button type="button" class="btn btn-link text-info">Save Search</button>
+                <button type="button" class="btn btn-link text-primary">Save Search</button>
                 <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
                 <button type="button" class="btn btn-primary">Add</button>
               </div>
@@ -1149,6 +1158,7 @@
           // "info":  false
         });
       } );
+
       $(document).ready( function () {
         $('#role-readiness-reports-table').DataTable({
           "searching": false,
@@ -1157,28 +1167,7 @@
           // "info":  false
         });
       } );
-    </script>
-    <script>
-      var showAttachmentInput = function () {
-        document.getElementById("add-cert-modal-input").classList.toggle("show");
-      };
 
-      (function () {
-        bsCustomFileInput.init()
-      })()
-    </script>
-    <script>
-      function toggleCardDisplay() {
-        var el = event.target;
-        el.classList.contains("fa") ? el = el.parentElement : el = el;
-        $(el)[0].childNodes[0].textContent == "Show" ? $(el)[0].childNodes[0].textContent = "Hide" : $(el)[0].childNodes[0].textContent = "Show";
-        $(el.children[0]).toggleClass("fa-chevron-circle-up").toggleClass("fa-chevron-circle-down");
-        $($(el).parent().siblings()).each(function () {
-          $(this).css("transition", "all 0.2s ease-out");
-          $(this).toggleClass('hidden');
-          $(this).css("display", "none !important");
-        });
-      }
       function toggleManageColumnsDropdown() {
         var el = $(event.target);
         console.log(el);
