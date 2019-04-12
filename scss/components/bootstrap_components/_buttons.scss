@@ -1,3 +1,8 @@
+.btn:focus, button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .btn {
     width: 120px;
     font-variant: all-small-caps;
