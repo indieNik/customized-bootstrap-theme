@@ -5,7 +5,7 @@
         tr th {
             padding: 1rem 1.3rem;
             color: $silver;
-            font-size: $font-14;
+            font-size: $font-12;
             font-weight: $font-weight-300;
         }
     }
@@ -19,7 +19,7 @@
     }
 }
 
-.table-container {
+.reports-table-container {
     border: 1px solid rgba(#000, .075);
     border-radius: 0.25rem;
     .table {
@@ -48,6 +48,85 @@
                             font-size: $font-12;
                             color: $dark;
                             font-weight: $font-weight-400;
+                        }
+                    }
+                }
+            }
+        }
+
+        thead, tbody tr {
+            display: table;
+            width: 100%;
+            table-layout:fixed;
+        }
+        
+        tr.active {
+            background-color: #F8F8F8;
+            font-weight: $font-weight-400;
+            td .title {
+                color: $dark;
+            }
+        }
+
+        td {
+            padding: .85rem 1.3rem; // Global padding for table cells
+            vertical-align: middle;
+            tr.active {
+                background-color: #F8F8F8;
+            }
+            .previous-assessors-btn {
+                font-variant: normal;
+                text-transform: capitalize;
+                // font-size: $font-12;
+                color: $primary;
+            }
+        }
+
+        &.sticky {
+            th:first-child, td:first-child {
+                box-shadow: 8px 0px 8px #e3e3e34d;
+            }
+            td:first-child {
+                width: 174px;
+                padding-left: 0.75rem;
+            }
+        }
+    }
+}
+
+.table-container {
+    border: 1px solid rgba(#000, .075);
+    border-radius: 0.25rem;
+    .table {
+
+        thead {
+            tr th {
+                color: $silver;
+                font-size: $font-14;
+                font-weight: $font-weight-300;
+                width: 174px;
+            }
+        }
+
+        tbody {
+            display:block;
+            max-height: 400px;
+            overflow: scroll;
+            @extend .scroll-active ;
+            tr {
+                // border-bottom: 2px solid lighten($color: $silver, $amount: 25%);
+                td {
+                    // font-size: $font-12;
+                    color: $silver;
+                    .mini-card {
+                        padding-left: 0;
+                        .details {
+                            margin: 0;
+                            .title {
+                                font-size: $font-12;
+                                color: $dark;
+                                font-weight: $font-weight-400;
+                            }
                         }
                     }
                 }
