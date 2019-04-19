@@ -6,7 +6,7 @@
     .stats__details {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         width: 100%;
         margin-bottom: 20px;
     }
@@ -22,6 +22,7 @@
 
 .stats__card {
     @extend .mini-card;
+    margin-left: 20px;
     padding: 0;
     .details {
         margin-left: 10px;
