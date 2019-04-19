@@ -233,6 +233,12 @@
 				padding: 1rem 0 1rem 1rem;
 				.form-header {
 					@extend .perfect-center ;
+					.input-group input, .input-group-append .input-group-text {
+						border: 0;
+						box-shadow: $input-box-shadow;
+						font-size: $font-12;
+						color: $silver;
+					}
 				}
 				.filters {
 					margin-top: 1rem;
