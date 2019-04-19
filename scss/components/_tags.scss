@@ -1,12 +1,12 @@
-.tag--blue {
+.tag-blue {
     @extend .badge, .badge-primary, .p-2, .mr-2, .mb-2;
     background: lighten($blue, 50%);
     color: $blue;
-    border-radius: 0.5rem;
-    font-size: 12px;
-    font-weight: 400;
 }
 
 .tag-mini {
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 0.5rem;
     padding: 0.3rem 1rem !important;
 }
