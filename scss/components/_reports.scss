@@ -263,6 +263,10 @@
 					overflow: scroll;
 					.mini-card {
 						display: block;
+						input[type="checkbox"] {
+							// Override Application CSS style leaks
+							margin: 5px 0 0 -20px !important;
+						}
 						.form-check-label {
 							font-size: $font-14;
 							color: $dark;
@@ -284,7 +288,6 @@
 							// position: relative;
 							width: 13px;
 							height: 13px;
-							margin-right: 3px;
 							outline: none;
 							&:checked:after {
 								content: '';
