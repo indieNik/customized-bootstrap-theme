@@ -4,10 +4,14 @@
     align-items: center;
     // padding: 1rem;
     border-radius: 0.5rem;
+
+    img {
+        margin-right: 10px;
+    }
+
     .details {
         display: flex;
         flex-direction: column;
-        margin-left: 10px;
         .title {
             font-size: $font-14;
             font-weight:  $font-weight-400;
