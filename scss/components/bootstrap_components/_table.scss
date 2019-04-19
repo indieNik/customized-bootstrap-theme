@@ -29,7 +29,6 @@
             tr th {
                 color: $info;
                 font-weight: $font-weight-300;
-                width: 174px;
                 font-size: 14px;
             }
         }
@@ -89,7 +88,6 @@
                 box-shadow: 8px 0px 8px #e3e3e34d;
             }
             td:first-child {
-                width: 174px;
                 padding-left: 0.75rem;
             }
         }
@@ -100,13 +98,21 @@
     border: 1px solid rgba(#000, .075);
     border-radius: 0.25rem;
     .table {
+        .table-col-sm {
+            width: 12%;
+        }
+        .table-col-md {
+            width: 30%;
+        }
+        .table-col-lg {
+            width: 58%;
+        }
 
         thead {
             tr th {
                 color: $silver;
                 font-size: $font-14;
                 font-weight: $font-weight-300;
-                width: 174px;
             }
         }
 
@@ -168,7 +174,6 @@
                 box-shadow: 8px 0px 8px #e3e3e34d;
             }
             td:first-child {
-                width: 174px;
                 padding-left: 0.75rem;
             }
         }
