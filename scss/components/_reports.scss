@@ -233,11 +233,28 @@
 				padding: 1rem 0 1rem 1rem;
 				.form-header {
 					@extend .perfect-center ;
-					.input-group input, .input-group-append .input-group-text {
+					.input-group input {
 						border: 0;
+						border-radius: 5px;
 						box-shadow: $input-box-shadow;
 						font-size: $font-12;
 						color: $silver;
+						z-index: 0;
+					}
+					.input-group-append {
+						position: absolute;
+						right: 0;
+						top: 0px;
+						z-index: 1;
+						.input-group-text {
+							border: 0;
+							// box-shadow: $input-box-shadow;
+							font-size: $font-16;
+							color: $silver;
+						}
+					}
+					.input-group-append .input-group-text:hover {
+						opacity: 1;
 					}
 				}
 				.filters {
