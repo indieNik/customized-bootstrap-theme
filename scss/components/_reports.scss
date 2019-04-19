@@ -233,6 +233,8 @@
 				}
 				.filters {
 					margin-top: 1rem;
+					max-height: 250px;
+					overflow: scroll;
 					.mini-card {
 						.form-check-label {
 							font-size: $font-14;
