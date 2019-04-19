@@ -23,4 +23,7 @@
 .stats__card {
     @extend .mini-card;
     padding: 0;
+    .details {
+        margin-left: 10px;
+    }
 }
