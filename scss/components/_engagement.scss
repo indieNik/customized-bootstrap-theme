@@ -5,7 +5,10 @@
 }
 
 .engagement-card {
-    @extend .mini-card, .d-inline-block, .flex-fill ;
+    @extend .mini-card, .d-inline-block ;
+    &:nth-child(1){ flex: 0 0 15% }
+    &:nth-child(2){ flex: 0 0 15% }
+    &:nth-child(3){ flex: 0 0 70% }
     .details {
         .title {
             color: $silver;
