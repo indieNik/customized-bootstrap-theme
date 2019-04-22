@@ -1,5 +1,5 @@
 .tag-blue {
-    @extend .badge, .badge-primary, .p-2, .mr-2, .mb-2;
+    @extend .badge, .p-2, .mr-2, .mb-2;
     background: lighten($blue, 50%);
     color: $blue;
 }
@@ -9,4 +9,22 @@
     font-weight: 400;
     border-radius: 0.5rem;
     padding: 0.3rem 1rem !important;
+}
+
+.tag-filters {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .tag-mini {
+        cursor: pointer;
+        margin-right: 50px;
+        color: $info;
+    }
+    .active {
+        @extend .tag-blue ;
+        font-weight: $font-weight-400;
+        color: $dark;
+        margin: 0 50px 0 0 !important;
+        border-radius: 0.5rem;
+    }
 }
