@@ -3,7 +3,7 @@
     margin-bottom: 0 !important;
     table-layout: fixed;
     thead {
-        border-bottom: 1px solid rgba(#000, .075);
+        border-bottom: 2px solid $lightgray;
         tr th {
             padding: $font-12;
             color: $silver;
@@ -23,7 +23,7 @@
 }
 
 .reports-table-container {
-    border: 1px solid rgba(#000, .075);
+    border: 2px solid $lightgray;
     border-radius: 0.25rem;
     .table {
 
@@ -98,7 +98,7 @@
 }
 
 .table-container {
-    border: 1px solid rgba(#000, .075);
+    border: 2px solid $lightgray;
     border-radius: 0.25rem;
     .table {
         .table-col-sm {
