@@ -6,8 +6,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        //border-radius: $card-border-radius $card-border-radius 0 0;
-        //border-bottom: 2px solid theme-color-level(light, 0.1);
+        border-radius: $card-border-radius $card-border-radius 0 0;
+        border-bottom: 1px solid $lightgray;
         font-weight: 400;
         text-transform: uppercase;
         
