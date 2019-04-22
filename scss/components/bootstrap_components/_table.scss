@@ -102,13 +102,13 @@
     border-radius: 0.25rem;
     .table {
         .table-col-sm {
-            width: 12%;
+            width: 12% !important;
         }
         .table-col-md {
-            width: 30%;
+            width: 30% !important;
         }
         .table-col-lg {
-            width: 58%;
+            width: 58% !important;
         }
 
         thead {
