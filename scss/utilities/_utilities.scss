@@ -12,9 +12,15 @@
     align-items: center;
 }
 
-.perfect-spaced-between {
+.perfect-space-between {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.perfect-space-around {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 

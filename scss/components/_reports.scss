@@ -1,6 +1,6 @@
 .reports-container {
 	.report-filters {
-		@extend .perfect-spaced-between;
+		@extend .perfect-space-between;
 		margin-bottom: 1rem;
 		.input-group {
 			width: 300px;
@@ -199,7 +199,7 @@
 			align-items: baseline;
 			justify-content: space-between;
 			.title-section {
-				@extend .perfect-spaced-between ;
+				@extend .perfect-space-between ;
 				font-size: $font-12;
 				font-weight: $font-weight-400;
 				flex-basis: 30%;
