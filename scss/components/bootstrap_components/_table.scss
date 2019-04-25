@@ -12,7 +12,7 @@
         }
     }
     tbody {
-        display:block;
+        display: table-caption;
         max-height: 400px;
         overflow: scroll;
         @extend .scroll-active ;
