@@ -11,6 +11,16 @@
     padding: 0.3rem 1rem !important;
 }
 
+.tag-cross {
+    &:after {
+        content: '\2715';
+        position: relative;
+        left: 5px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+}
+
 .tag-filters {
     display: flex;
     align-items: center;
