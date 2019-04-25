@@ -12,6 +12,10 @@
         }
     }
     tbody {
+        display:block;
+        max-height: 400px;
+        overflow: scroll;
+        @extend .scroll-active ;
         td {
             border: 0;
             padding: $font-12;
