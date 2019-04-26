@@ -35,7 +35,7 @@
                 color: $info;
                 font-weight: $font-weight-300;
                 font-size: 14px;
-                padding: 1rem 1.3rem;
+                padding: 1rem 20px;
             }
         }
 
@@ -78,7 +78,7 @@
         }
 
         td {
-            padding: .85rem 1.5rem; // Global padding for table cells
+            padding: .85rem 20px; // Global padding for table cells
             vertical-align: middle;
             tr.active {
                 background-color: #F8F8F8;
