@@ -28,7 +28,6 @@
   </div>
   <div class="container container-temp container-fluid mt-5">
     <div class="row">
-      <div class="col-md-2"></div>
       <div class="col-md-10">
         <div class="row">
           <div class="col-lg-12 mt-lg-0 mt-4 reports-container">
@@ -49,7 +48,7 @@
                 <button class="btn btn-outline-primary ml-3" onclick="toggleManageColumnsDropdown()">
                   Manage Columns
                 </button>
-                <div class="card dropdown scroll-active">
+                <div class="card dropdown ">
                   <div class="card-body">
                     <div class="mini-card">
                       <div class="form-check form-control-sm">
@@ -958,7 +957,7 @@
 
       <!--  Modals  -->
       <div class="modal fade saved-searches-modal" id="savedSearchesModal" tabindex="-1" role="dialog" aria-labelledby="savedSearchesModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg scroll-active" role="document">
+        <div class="modal-dialog modal-lg " role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="savedSearchesModalLabel">Saved Searches</h5>
@@ -1157,7 +1156,7 @@
                    <button class="btn btn-sm btn-link-info">Select All</button>
                    <button class="btn btn-sm btn-link-info">Clear</button>
                  </div>
-                 <div class="filters scroll-active">
+                 <div class="filters ">
                     <div class="mini-card">
                       <div class="form-check form-control-sm">
                         <input type="checkbox" class="form-check-input" id="acquisition">
@@ -1252,7 +1251,7 @@
       $(document).ready( function () {
         $('#general-reports-table').removeAttr('width').DataTable({
           "scrollX": true,
-          "scrollY": "400px",
+          "scrollY": "400",
           "searching": false,
           "ordering":  false,
           "paging":  false,

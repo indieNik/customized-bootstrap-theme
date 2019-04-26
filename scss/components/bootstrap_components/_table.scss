@@ -14,7 +14,6 @@
     tbody {
         max-height: 400px;
         overflow: scroll;
-        @extend .scroll-active ;
         td {
             border: 0;
             padding: $font-12;
@@ -44,7 +43,6 @@
         }
 
         tbody {
-            @extend .scroll-active ;
             tr {
                 border-bottom: 2px solid lighten($color: $silver, $amount: 25%);
                 td {
@@ -128,7 +126,6 @@
             display:block;
             max-height: 400px;
             overflow: scroll;
-            @extend .scroll-active ;
             tr {
                 // border-bottom: 2px solid lighten($color: $silver, $amount: 25%);
                 td {
