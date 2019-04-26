@@ -24,3 +24,7 @@ table.dataTable thead td {
 .dataTable {
 	width: 100% !important;
 }
+
+.DTFC_LeftBodyLiner {
+	height: calc(100% - 12px) !important; // Substract the Scrollbar height from the Fixed Column of the Table
+}
