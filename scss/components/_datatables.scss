@@ -14,3 +14,13 @@
 		margin-top: -10px;
 	}
 }
+
+.dataTables_scrollBody,
+table.dataTable, table.dataTable thead th,
+table.dataTable thead td {
+	border-bottom: 0 !important;
+}
+
+.dataTable {
+	width: 100% !important;
+}

@@ -39,10 +39,11 @@
             }
         }
 
+        th, td {
+            width: 120px !important;
+        }
+
         tbody {
-            display:block;
-            max-height: 400px;
-            overflow: scroll;
             @extend .scroll-active ;
             tr {
                 border-bottom: 2px solid lighten($color: $silver, $amount: 25%);
@@ -65,6 +66,7 @@
             display: table;
             width: 100%;
             table-layout:fixed;
+            border-bottom: 1px solid $lightgray;
         }
         
         tr.active {
@@ -91,7 +93,7 @@
 
         &.sticky {
             th:first-child, td:first-child {
-                box-shadow: 8px 0px 8px #e3e3e34d;
+                box-shadow: inset 0px 0px 8px 0px #e3e3e34d;
             }
             td:first-child {
                 padding-left: 0.75rem;
