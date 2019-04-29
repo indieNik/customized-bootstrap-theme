@@ -307,11 +307,13 @@
 							display: inline-flex;
 							justify-content: flex-start;
 							align-items: center;
-							width: 25%;
+							width: fit-content;
 							margin: 5px 2px;
 							.form-input {
-								width: 35px;
-								height: 25px;
+								max-width: 250px;
+								width: fit-content;
+								min-width: 40px;
+								height: fit-content;
 								border: 0;
 								box-shadow: $input-box-shadow;
 								font-size: $font-12;

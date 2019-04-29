@@ -1175,9 +1175,9 @@
                         <label class="form-check-label" for="bu-3">Business Unit 3</label>
                       </div>
                       <div class="filter-range">
-                        <input type="text" class="form-input form-control form-control-sm">
+                        <span contenteditable="true" class="digits-only form-input form-control form-control-sm"></span>
                         <div class="separator"></div>
-                        <input type="text" class="form-input form-control form-control-sm">
+                        <span contenteditable="true" class="digits-only form-input form-control form-control-sm"></span>
                       </div>
                     </div>
                     <div class="mini-card">
@@ -1277,6 +1277,10 @@
         console.log(el);
         $(el[0].nextSibling.nextSibling).toggleClass("show")
       }
+
+      $(".digits-only").keypress(function(e) {
+        if (isNaN(String.fromCharCode(e.which))) e.preventDefault();
+      });
     </script>
 </body>
 
