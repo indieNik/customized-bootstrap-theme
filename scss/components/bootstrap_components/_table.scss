@@ -38,7 +38,11 @@
             }
         }
 
-        th, td {
+        th {
+            width: 120px !important;
+        }
+
+        td {
             width: 120px !important;
         }
 
@@ -94,7 +98,7 @@
                 box-shadow: inset 0px 0px 8px 0px #e3e3e34d;
             }
             td:first-child {
-                padding-left: 0.75rem;
+                // padding-left: 0.75rem;
             }
         }
     }

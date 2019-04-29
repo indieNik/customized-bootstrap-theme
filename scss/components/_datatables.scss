@@ -16,8 +16,10 @@
 }
 
 .dataTables_scrollBody,
-table.dataTable, table.dataTable thead th,
+table.dataTable,
+table.dataTable thead th,
 table.dataTable thead td {
+	margin: 0 !important;
 	border-bottom: 0 !important;
 }
 
@@ -26,5 +28,5 @@ table.dataTable thead td {
 }
 
 .DTFC_LeftBodyLiner {
-	height: calc(100% - 12px) !important; // Substract the Scrollbar height from the Fixed Column of the Table
+	height: calc(100% - 6px) !important; // Substract the Scrollbar height from the Fixed Column of the Table
 }
