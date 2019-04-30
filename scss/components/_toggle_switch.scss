@@ -5,7 +5,7 @@
 
     $switch_width: 20px;
     $switch_height: $switch_width / 1.8;
-    $switch_background: #EE5835;
+    $switch_background: #EE5B36;
     $thumb_height: 4 * ($switch_height / 6);
     $thumb_width: $thumb_height;
     $thumb_background: #fff;
@@ -49,7 +49,7 @@
     }
 
     input:checked + label {
-        background: #EE5835;
+        background: $switch_background;
     }
 
     input:checked + label:after {
