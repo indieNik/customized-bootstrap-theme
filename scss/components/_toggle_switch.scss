@@ -1,9 +1,7 @@
 .custom-switch {
-    input[type=checkbox]{
-        height: 0;
-        width: 0;
-        visibility: hidden;
-    }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
     $switch_width: 20px;
     $switch_height: $switch_width / 1.8;
@@ -15,8 +13,18 @@
     $gap_side: $switch_width / 10;
     $border_radius: $switch_width;
 
+    input[type=checkbox]{
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
     label {
         position: relative;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
         display: block;
         cursor: pointer;
         text-indent: -9999px;
