@@ -1,13 +1,14 @@
 .custom-switch {
     
-    $switch_width: 20px;
+    $switch_width: 18px;
     $switch_height: $switch_width / 1.8;
-    $switch_background: #EE5B36;
+    $switch_background: #fff;
+    $switch_border: 1px solid #EE5B36;
     $thumb_height: 4 * ($switch_height / 6);
     $thumb_width: $thumb_height;
-    $thumb_background: #fff;
-    $gap_vertical: ($switch_height / 6);
-    $gap_side: $switch_width / 10;
+    $thumb_background: #EE5B36;
+    $gap_vertical: ($switch_height / 8);
+    $gap_side: $switch_width / 20;
     $border_radius: $switch_width;
 
     display: inline-block;
@@ -34,6 +35,7 @@
         width: $switch_width;
         height: $switch_height;
         background: $switch_background;
+        border: $switch_border;
         border-radius: $border_radius;
         box-sizing: border-box;
     }
