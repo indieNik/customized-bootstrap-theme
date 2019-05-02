@@ -3,15 +3,45 @@
 	align-items: center;
 	justify-content: flex-end;
 	position: absolute;
-	right: 0;
+	right: 50px;
+    margin-top: 10px!important;
+	margin-bottom: 20px;
+	padding: 0 !important;
 	font-size: $font-12;
 	color: $dark;
 	font-weight: $font-weight-400;
-	.btn {
-		font-size: $font-22;
-		width: fit-content;
-		color: $silver;
-		margin-top: -10px;
+}
+
+.dataTables_paginate {
+	position: absolute;
+	right: 10px;
+	ul.pagination {
+		width: 40px;
+		display: flex;
+		justify-content: space-between !important;
+		align-items: center;
+		margin-right: -10px !important;
+		.paginate_button {
+			padding: 0 !important;
+			border: 0 !important;
+			min-width: 0 !important;
+			font-weight: $font-weight-100 !important;
+			a {
+				color: $silver !important;
+				font-size: $font-14;
+				&:focus {
+					outline: none;
+				}
+			}
+			&:hover {
+				border: 0 !important;
+				background: transparent !important;
+				color: $silver !important;
+			}
+			&:focus {
+				outline: none;
+			}
+		}
 	}
 }
 

@@ -1252,7 +1252,7 @@
     <script>
       $(document).ready( function () {
         $('#general-reports-table').removeAttr('width').DataTable({
-          dom: 't<"pagination m-2"ip>',
+          dom: 'tip',
           paging: true,
           pagingType: 'simple',
           lengthChange: false,
@@ -1263,11 +1263,19 @@
           ordering:  false,
           info:  true,
           fixedColumns: true,
+          language: {
+            info: "Showing _START_ - _END_ of _TOTAL_",
+            paginate: {
+              previous: "<i class='icon-Arrow-Left-1'></i>",
+              next: "<i class='icon-Arrow-Right-1'></i>"
+            }
+          }
+
         });
 
         $(document).ready( function () {
           $('#role-readiness-reports-table').removeAttr('width').DataTable({
-            dom: 't<"pagination m-2"ip>',
+            dom: 'tip',
             paging: true,
             pagingType: 'simple',
             lengthChange: false,
