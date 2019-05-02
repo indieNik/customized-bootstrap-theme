@@ -1252,24 +1252,32 @@
     <script>
       $(document).ready( function () {
         $('#general-reports-table').removeAttr('width').DataTable({
-          "scrollX": true,
-          "scrollY": "400",
-          "searching": false,
-          "ordering":  false,
-          "paging":  false,
-          "info":  true,
-          fixedColumns: true
+          dom: 't<"pagination m-2"ip>',
+          paging: true,
+          pagingType: 'simple',
+          lengthChange: false,
+          bDestroy: true,
+          scrollX: true,
+          scrollY: 600,
+          scrollCollapse: true,
+          ordering:  false,
+          info:  true,
+          fixedColumns: true,
         });
 
         $(document).ready( function () {
           $('#role-readiness-reports-table').removeAttr('width').DataTable({
-            "scrollX": true,
-            "scrollY": "400px",
-            "searching": false,
-            "ordering":  false,
-            "paging":  false,
-            "info":  false,
-            // fixedColumns: true
+            dom: 't<"pagination m-2"ip>',
+            paging: true,
+            pagingType: 'simple',
+            lengthChange: false,
+            bDestroy: true,
+            scrollX: true,
+            scrollY: 600,
+            scrollCollapse: true,
+            ordering:  false,
+            info:  true,
+            fixedColumns: true,
           });
         } );
 
