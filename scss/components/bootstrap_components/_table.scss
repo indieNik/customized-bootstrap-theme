@@ -93,14 +93,12 @@
             }
         }
 
-        &.sticky {
-            th:first-child, td:first-child {
-                box-shadow: inset 0px 0px 8px 0px #e3e3e34d;
-            }
-            td:first-child {
-                // padding-left: 0.75rem;
-            }
-        }
+    }
+
+    .DTFC_LeftHeadWrapper,
+    .DTFC_LeftBodyWrapper,
+    .DTFC_LeftFootWrapper {
+        box-shadow: 5px 0 5px 0px #e3e3e34d;
     }
 }
 
