@@ -2,6 +2,7 @@
     @extend .badge, .p-2, .mr-2, .mb-2;
     background: lighten($blue, 50%);
     color: $blue;
+    max-width: 200px;
 }
 
 .tag-mini {

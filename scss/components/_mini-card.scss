@@ -2,6 +2,12 @@
     position: relative;
     display: flex;
     align-items: center;
+    &.top-align {
+        align-items: flex-start;
+        img {
+            margin-top: 5px;
+        }
+    }
     // padding: 1rem;
     border-radius: 0.5rem;
 
