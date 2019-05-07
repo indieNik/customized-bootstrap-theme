@@ -24,6 +24,16 @@
     }
 }
 
+.table-small-container {
+    .table {
+        thead {
+            th {
+                border-bottom: 1px solid lighten($color: #A6B4C7, $amount: 10%) !important;
+            }
+        }
+    }
+}
+
 .reports-table-container {
     border: 2px solid $lightgray;
     border-radius: 0.25rem;
@@ -35,6 +45,7 @@
                 font-weight: $font-weight-300;
                 font-size: 14px;
                 padding: 1rem 20px;
+                white-space: nowrap;
             }
         }
 
