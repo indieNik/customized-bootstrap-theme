@@ -33,6 +33,9 @@
         .comment {
             color: $dark;
             font-size: $font-12;
+            .comment-label {
+                white-space: pre-wrap;
+            }
         }
         .hashtag {
             @extend .mt-2, .mb-2;

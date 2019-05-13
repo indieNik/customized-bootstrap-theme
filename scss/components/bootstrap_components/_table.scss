@@ -72,6 +72,12 @@
                         }
                     }
                 }
+                &:hover {
+                    color: $dark;
+                    font-weight: $font-weight-400;
+                    background-color: #f8f8f8;
+                    cursor: pointer;
+                }
             }
         }
 
