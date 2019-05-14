@@ -80,7 +80,7 @@
                     color: $silver;
                     &::after {
                         color: $silver;
-                        background-color: #fff;
+                        background-color: transparent !important;
                     }
                 }
             }
