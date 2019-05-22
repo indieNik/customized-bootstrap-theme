@@ -42,3 +42,12 @@
         margin-left: 0.3rem;
     }
 }
+
+.btn-attach {
+    @extend .btn, .btn-link ;
+    font-variant-caps: unset;
+    font-weight: 400;
+    padding: 0;
+    color: #0D72BA !important;
+    font-size: 14px;
+}
