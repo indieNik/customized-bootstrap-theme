@@ -25,6 +25,7 @@
     padding: 0.5rem;
     line-height: 1.5rem;
     .details {
+        width: 100%;
         .title-section {
             display: flex;
             justify-content: space-between;
@@ -44,12 +45,12 @@
             .cert-download-btn {
                 @extend .btn, .btn-sm, .btn-primary;
                 position: relative;
-                top: 0;
+                top: 6px;
                 float: right;
                 margin-left: 10px;
                 display: block;
                 height: 100%;
-                width: 100%;
+                width: 100px;
             }
         }
     }
