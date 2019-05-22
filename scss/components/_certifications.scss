@@ -24,20 +24,34 @@
     @extend .mini-card;
     padding: 0.5rem;
     line-height: 1.5rem;
-    .hover-actions {
-        position: absolute;
-        top: 0.5rem;
-        right: 1rem;
-        word-spacing: 0.5rem;
-        .fa {
-            cursor: pointer;
+    .details {
+        .title-section {
+            display: flex;
+            justify-content: space-between;
+            .title {
+                .hover-actions {
+                    position: relative;
+                    top: 0rem;
+                    right: 0rem;
+                    margin-left: 5px;
+                    word-spacing: .5rem;
+                    display: inline-block;
+                    .fa {
+                        cursor: pointer;
+                    }
+                }
+            }
+            .cert-download-btn {
+                @extend .btn, .btn-sm, .btn-primary;
+                position: relative;
+                top: 0;
+                float: right;
+                margin-left: 10px;
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
         }
-    }
-    .cert-download-btn {
-        @extend .btn, .btn-sm, .btn-primary;
-        position: absolute;
-        bottom: 0.5rem;
-        right: 1rem;
     }
     & + .certificate-image {
         padding: 0 1rem;
