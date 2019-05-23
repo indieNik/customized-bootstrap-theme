@@ -4,6 +4,15 @@
     
 */
 
+.container-empty {
+    display: flex;
+    margin-top: 10px;
+    font-size: 14px;
+    justify-content: center;
+    height: 20vh;
+    align-items: center;
+}
+
 .container {
     // width: 995px!important;
     // max-width: 1440px !important;
