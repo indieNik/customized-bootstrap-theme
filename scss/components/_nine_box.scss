@@ -6,34 +6,34 @@
 }
 
 .nine-box-item {
-    .active {
+    &.active {
         background: #2372BA !important;
     }
-    .mapping-3-1 {
+    &.mapping-3-1 {
         background: #74DC6D;
     }
-    .mapping-3-2 {
+    &.mapping-3-2 {
         background: #96E45D;
     }
-    .mapping-3-3 {
+    &.mapping-3-3 {
         background: #ACEA54;
     }
-    .mapping-2-1 {
+    &.mapping-2-1 {
         background: #61D47B;
     }
-    .mapping-2-2 {
+    &.mapping-2-2 {
         background: #74DC6D;
     }
-    .mapping-2-3 {
+    &.mapping-2-3 {
         background: #96E45D;
     }
-    .mapping-1-1 {
+    &.mapping-1-1 {
         background: #57C397;
     }
-    .mapping-1-2 {
+    &.mapping-1-2 {
         background: #61D47B;
     }
-    .mapping-1-3 {
+    &.mapping-1-3 {
         background: #74DC6D;
     }
 }
