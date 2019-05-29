@@ -55,7 +55,9 @@
   </div> -->
     <div class="container container-temp container-fluid mt-5">
       <div class="container-empty">
-        No data to display
+        <button type="button" class="btn btn-sm ml-5 btn-primary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+          No data to display
+        </button>
       </div>
     </div>
 
@@ -80,44 +82,7 @@
       src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      var showAttachmentInput = function() {
-        document
-          .getElementById("add-cert-modal-input")
-          .classList.toggle("show");
-      };
-
-      (function() {
-        bsCustomFileInput.init();
-      })();
-    </script>
-    <script>
-      function toggleCardDisplay() {
-        var el = event.target;
-        el.classList.contains("fa") ? (el = el.parentElement) : (el = el);
-        $(el)[0].childNodes[0].textContent == "Show"
-          ? ($(el)[0].childNodes[0].textContent = "Hide")
-          : ($(el)[0].childNodes[0].textContent = "Show");
-        $(el.children[0])
-          .toggleClass("fa-chevron-circle-up")
-          .toggleClass("fa-chevron-circle-down");
-        $(
-          $(el)
-            .parent()
-            .siblings()
-        ).each(function() {
-          $(this).css("transition", "all 0.2s ease-out");
-          $(this).toggleClass("hidden");
-          $(this).css("display", "none !important");
-        });
-      }
-      function toggleDropdown() {
-        var el = $(event.target);
-        $(el[0].nextSibling.nextSibling.nextSibling.nextSibling).toggleClass(
-          "show"
-        );
-      }
-    </script>
+    
     <script
       src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"
       crossorigin="anonymous"
@@ -127,24 +92,9 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      $(document).ready(function() {
-        $("#multiraterTable").DataTable({
-          searching: false,
-          ordering: false,
-          // "scrollY": '250px',
-          // "scrollCollapse": true,
-          paging: false,
-          info: false
-        });
-        $("#courseTable").DataTable({
-          searching: false,
-          ordering: false,
-          // "scrollY": '250px',
-          scrollCollapse: true,
-          paging: false,
-          info: false
-        });
-      });
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
     </script>
   </body>
 </html>
