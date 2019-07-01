@@ -38,11 +38,10 @@
     border: 2px solid $lightgray;
     border-radius: 0.25rem;
     .table {
-
         thead {
             tr th {
-                color: $info;
-                font-weight: $font-weight-300;
+                color: $blue;
+                font-weight: $font-weight-400;
                 font-size: 14px;
                 padding: 1rem 20px;
                 white-space: nowrap;
